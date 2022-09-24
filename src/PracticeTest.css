@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapperTest {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTest {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.cardTestRowOne {
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.testQuestion {
+  font-family: "Roboto", sans-serif;
+  font-size: 120%;
+  line-height: 160%;
+}
+
+.cardTestRowTwo {
+  background-color: rgba(245, 245, 245, 0.416);
+  padding: 30px 30px 30px 30px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.testAnswersGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.testAnswerContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px;
+  width: 90%;
+}
+
+.testRadio {
+  margin-right: 10px;
+}
+
+.testRadio:hover {
+  cursor: pointer;
+}
+
+.testAnswerText {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+}
+
+.testAnswerText:hover {
+  cursor: pointer;
+}

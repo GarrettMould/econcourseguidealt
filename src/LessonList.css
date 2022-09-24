@@ -1,0 +1,92 @@
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.justifyCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.listLessons {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 2px;
+  list-style: none;
+}
+
+.itemContentContainer {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  transition: box-shadow 0.3s;
+}
+
+.itemContentContainer:hover {
+  background-color: #f5f5f7b1;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 700;
+}
+
+.colorSquare {
+  height: 25px;
+  width: 25px;
+  background-color: aquamarine;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.lessonName {
+  width: 90%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  font-size: 110%;
+  font-family: "Roboto", sans-serif;
+}
+
+.subtopic {
+  font-size: 110%;
+  font-family: "Roboto", sans-serif;
+}
+
+.tokenLL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: #e7f9ed;
+  border-radius: 2px;
+}
+
+.tokenContentContainerLL {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.tokenDotLL {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #52e583;
+}
+
+.tokenTextLL {
+  font-family: "Roboto", sans-serif;
+  font-size: 75%;
+}

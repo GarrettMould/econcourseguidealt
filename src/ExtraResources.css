@@ -1,0 +1,109 @@
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.listCards {
+  padding: 30px 0px !important;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card {
+  min-width: 350px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.cardRowOne {
+  padding: 30px 30px 15px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.colorSquare {
+  height: 30px;
+  width: 30px;
+  background-color: aquamarine;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.cardType {
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  font-weight: 500;
+}
+
+.cardRowTwo {
+  padding: 15px 30px 15px 30px;
+  display: flex;
+}
+
+.cardTitle {
+  font-size: 160%;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardRowThree {
+  padding: 15px 30px 30px 30px;
+  display: flex;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cardDescription {
+  font-size: 100%;
+  line-height: 200%;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardRowFour {
+  background-color: rgba(245, 245, 245, 0.416);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.token {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: #e7f9ed;
+  border-radius: 2px;
+}
+
+.tokenContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.tokenDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #52e583;
+}
+
+.tokenText {
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+}
+
+/* Scrollbar Styling */
