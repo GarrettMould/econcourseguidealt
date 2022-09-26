@@ -1,0 +1,54 @@
+.homeCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeCard {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.homeCard:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+}
+
+.homeCardContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+.homeCardRowOne {
+  height: 300px;
+  background-color: #e2f2f0;
+}
+
+.homeCardRowTwo {
+  padding: 15px;
+  height: 100px;
+}
+
+.homeCardRowTwoContentContainer {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.unitNumber {
+  font-weight: 500;
+  font-size: 120%;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 5px;
+}
+
+.unitName {
+  font-size: 150%;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}

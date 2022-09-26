@@ -6,6 +6,7 @@
 .wrapperTest {
   display: flex;
   flex-direction: column;
+  margin-left: -15px;
 }
 
 .cardTest {
@@ -24,7 +25,7 @@
 .testQuestion {
   font-family: "Roboto", sans-serif;
   font-size: 120%;
-  line-height: 160%;
+  line-height: 170%;
 }
 
 .cardTestRowTwo {

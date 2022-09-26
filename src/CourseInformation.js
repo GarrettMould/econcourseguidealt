@@ -5,10 +5,8 @@ export var courseInformation = [
     unitUnlocked: true,
     unitTestUnlocked: false,
     unitName: "Introduction to Economics",
-    unitBackgroundColor: "rgba(255, 195, 0, 0.5)",
-    unitBorderColor: "#004012",
-    unitSolidColor: "#ffc300",
-
+    unitBackgroundColor: "#e2f2f0",
+    unitSolidColor: "#9BD3CB",
     unitConcepts: [
       {
         name: "Scarcity",
@@ -96,18 +94,21 @@ export var courseInformation = [
       {
         name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1vuq_VPdpo7-CEYKQ-hiUsNFfcilvFTwzyYuds_f1z5s/edit?usp=sharing"
       },
       {
         name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1dXVmyPT2K0C4TDk1adt6heeoFpZKKwpY48N6jkb63gc/edit?usp=sharing"
       },
@@ -115,48 +116,56 @@ export var courseInformation = [
         name:
           "U1-L4: Three Fundamental Macroeconomic Questions / Economic Systems",
         subtopic: 2,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1WmDh9FSfc0xgzfm7jXWrPOZyHJPZSGnoaJ2RA7PEgr4/edit?usp=sharing"
       },
       {
         name: "U1-L5: The Key Differences Between Economic Systems",
         subtopic: 2,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1o_9W_QbyXd3iMl316LCqPp1jv_dLPuZAFP-wTpbV1IM/edit?usp=sharing"
       },
       {
         name: "U1-L6: The Circular Flow of Income",
         subtopic: 2,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1ZupCUzTva1bC-eEgfUZnscNUkP0uEl0japIrGktbVew/edit?usp=sharing"
       },
       {
         name: "U1-L7: Market Economies",
         subtopic: 3,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1RCfmPytSvSCY9tW2e1JEMv0ZjM9zDCeL6biVdkVWL7I/edit?usp=sharing"
       },
       {
         name: "U1-L8: The Benefits of Market Economies",
         subtopic: 3,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/13pfMbCKgeSQqHHYjZmB7nMX_38Wh4kteIIdPbPisx0c/edit?usp=sharing"
       },
       {
         name: "U1-L9: Free Enterprise",
         subtopic: 3,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1AtU0VCL3lXgSUvToMxtoVZMZRk96tmekjkrbCLZEEZs/edit?usp=sharing"
       },
       {
         name: "U1-L10: The Law of Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1XDwf1OhOgJDjZ-CQ-Cptlxqf4T9uCsmlFonEQMpJ5QM/edit?usp=sharing"
       },
       {
         name: "U1-L11: The Law of Supply",
         subtopic: 4,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/14Qw7DHq2GRERipCqEeDb4wJyZInAHMs1tkQr-uEuc_M/edit?usp=sharing"
       },
@@ -164,12 +173,14 @@ export var courseInformation = [
         name:
           "U1-L12: Equilibrium / Shifts in Supply and Demand / Externalities",
         subtopic: 4,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1xbLpArB4j_-Wufx0dYj9czY73-Exk2m9V9pVn0XTWYM/edit?usp=sharing"
       },
       {
         name: "U1 Review",
         subtopic: 0,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1Rsr1lNZ5SX_BB_iy93D8GC7raT5md1GHDOcEWSjwk2Y/edit?usp=sharing"
       }
@@ -555,10 +566,8 @@ export var courseInformation = [
     unitUnlocked: true,
     unitTestUnlocked: false,
     unitName: "Free Market and Business",
-    unitBackgroundColor: "rgba(3, 255, 6, 0.5)",
-    unitBorderColor: "rgba(3, 255, 6, 0.2)",
-    unitSolidColor: "#03ff06",
-
+    unitBackgroundColor: "#fdf0eb",
+    unitSolidColor: "#f9d8cd",
     unitConcepts: [
       {
         name: "Factors of Production",
@@ -649,60 +658,70 @@ export var courseInformation = [
       {
         name: "U2-L1: Factors of Production",
         subtopic: 1,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1uIdQMoCf8lv0gg5qhOq0MjcVqx22kn90ErRb1nlDE3k/edit?usp=sharing"
       },
       {
         name: "U2-L2: Production Possibilities Curves",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1XvQoX09qWH5uL1ZTfeQDwfUTvle83DhrEP8ckgRQqqY/edit?usp=sharing"
       },
       {
         name: "U2-L3: Forming a Business",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1WdZI7gANtLxtHXyjSGlrAJPKkeaW4vFgcvgIAuJTkQs/edit?usp=sharing"
       },
       {
         name: "U2-L4: Types of Businesses",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1AotFtQYXz3ovcYRJP0a_o_JfQkdEu2DmY_1QUMfkGIU/edit?usp=sharing"
       },
       {
         name: "U2-L5: Labor and Labor Unions",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1ZOpgAsknvDWSLh45wxX4gC7R1ALBLbOGmfnw2GCgFl8/edit?usp=sharing"
       },
       {
         name: "U2-L6: The Supply and Demand of Labor",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing"
       },
       {
         name: "U2-L7: Trade, Jobs, and Careers",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing"
       },
       {
         name: "U2-L8: Economic Growth and Capital",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1MRnJ0NMbPrSrtBmYXzgu9QxIdB17isJ4ULx1qabmIAQ/edit?usp=sharing"
       },
       {
         name: "U2-L9: International Trade and Economic Growth",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1zuvT-u6arHPYOzOkRuvim7NPKeTAvh-VliD-RsxgvXc/edit?usp=sharing"
       },
       {
         name: "Unit 2 Review Lesson",
         subtopic: 0,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1VFmqyCd3n3i21fh_f4K0_zWtv_1QPuKDaKOBn9Ui66w/edit?usp=sharing"
       }
@@ -711,7 +730,8 @@ export var courseInformation = [
       {
         name: "Factors of Production Explained",
         type: "YouTube Video",
-        summary: "A simple explanation of the factors of production",
+        summary:
+          "A simple explanation of the factors of production and why money is not considered a factor of production.",
         link: "https://www.youtube.com/watch?v=VZD7dTSHmIo",
         subtopic: 1,
         concepts: [{ name: "Factors of Production", subTopic: 1 }]
@@ -720,7 +740,7 @@ export var courseInformation = [
         name: "The Minimum Wage: Does it Hurt Workers?",
         type: "YouTube Video",
         summary:
-          "A quick look at the debate over minimum wage laws by the Economist.",
+          "A video by the Economist that explores the current debate over minimum wage laws.",
         link: "https://www.youtube.com/watch?v=8H4yp8Fbi-Y",
         subtopic: 3,
         concepts: [
@@ -730,10 +750,22 @@ export var courseInformation = [
         ]
       },
       {
-        name: "Minimum Wage and Price Floors (Khan Academy)",
+        name: "Minimum Wage and Price Floors",
         type: "YouTube Video",
         summary:
-          "A detailed breakdown of the economic impact that minimum wage, and price floors in general, have on markets.",
+          "A Khan Academy breakdown of the economic impact that minimum wage, and price floors in general, have on markets.",
+        link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
+        subtopic: 3,
+        concepts: [
+          { name: "Minimum Wage", subTopic: 3 },
+          { name: "Price Floors", subTopic: 3 }
+        ]
+      },
+      {
+        name: "Minimum Wage and Price Floors",
+        type: "YouTube Video",
+        summary:
+          "A Khan Academy breakdown of the economic impact that minimum wage, and price floors in general, have on markets.",
         link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
         subtopic: 3,
         concepts: [
@@ -911,10 +943,8 @@ export var courseInformation = [
     unitName: "Government",
     unitUnlocked: false,
     unitTestUnlocked: false,
-    unitBackgroundColor: "rgba(255, 3, 243, 0.5)",
-    unitBorderColor: "rgba(255, 3, 243, 0.2)",
-    unitSolidColor: "#ff03f3",
-
+    unitBackgroundColor: "#ebf7f8",
+    unitSolidColor: "#AEDDE0",
     unitConcepts: [
       {
         name: "Scarcity",
@@ -989,72 +1019,84 @@ export var courseInformation = [
       {
         name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L4: Three Fundamental Macroeconomic Questions",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L5: Basic Economic Systems",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L7: The Benefits and Key Features of Market Economies",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L8: Adam Smith and The Wealth of Nations",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L9: An Introduction to Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L10: The Laws of Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L11: Non-Price Determinants of Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L12: Unit 1 Review",
         subtopic: 0,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       }
@@ -1296,10 +1338,8 @@ export var courseInformation = [
     unitName: "Regulations",
     unitUnlocked: false,
     unitTestUnlocked: false,
-    unitBackgroundColor: "rgba(3, 42, 255, 0.5)",
-    unitBorderColor: "rgba(3, 42, 255, 0.2)",
-    unitSolidColor: "#032aff",
-
+    unitBackgroundColor: "#eee9ef",
+    unitSolidColor: "#C0ADC5",
     unitConcepts: [
       {
         name: "Scarcity",
@@ -1374,72 +1414,84 @@ export var courseInformation = [
       {
         name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L4: Three Fundamental Macroeconomic Questions",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L5: Basic Economic Systems",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
         subtopic: 2,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L7: The Benefits and Key Features of Market Economies",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L8: Adam Smith and The Wealth of Nations",
         subtopic: 3,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L9: An Introduction to Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L10: The Laws of Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L11: Non-Price Determinants of Supply and Demand",
         subtopic: 4,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L12: Unit 1 Review",
         subtopic: 0,
+        completed: false,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       }

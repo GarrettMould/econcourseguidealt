@@ -4,18 +4,22 @@
 }
 
 .listCards {
-  padding: 30px 0px !important;
+  padding: 0px 0px 30px 0px !important;
   width: 100%;
   list-style: none;
   display: flex;
   overflow-x: scroll;
 }
 
+.card:first-child {
+  margin-left: 0px;
+}
+
 .card {
   min-width: 350px;
   min-height: 450px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: [row1] 90px [row2] 275px [row3] 150px;
   border: 1px solid rgb(230, 230, 230);
   margin: 15px;
   transition: box-shadow 0.3s;
@@ -32,15 +36,6 @@
   justify-content: space-between;
 }
 
-.colorSquare {
-  height: 30px;
-  width: 30px;
-  background-color: aquamarine;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-
 .cardType {
   font-family: "Roboto", sans-serif;
   font-size: 130%;
@@ -50,11 +45,14 @@
 .cardRowTwo {
   padding: 15px 30px 15px 30px;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .cardTitle {
   font-size: 160%;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
 }
 
 .cardRowThree {
@@ -70,14 +68,15 @@
 }
 
 .cardRowFour {
+  justify-self: end;
   background-color: rgba(245, 245, 245, 0.416);
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
 }
 
-.token {
+.tokenER {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,14 +85,14 @@
   border-radius: 2px;
 }
 
-.tokenContentContainer {
+.tokenContentContainerER {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
 }
 
-.tokenDot {
+.tokenDotER {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -101,9 +100,9 @@
   background-color: #52e583;
 }
 
-.tokenText {
+.tokenTextER {
   font-family: "Roboto", sans-serif;
-  font-size: 90%;
+  font-size: 80%;
 }
 
 /* Scrollbar Styling */

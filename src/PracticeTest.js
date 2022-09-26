@@ -1,7 +1,8 @@
 import "./PracticeTest.css";
 
 const PracticeTest = (props) => {
-  var practiceTestQuestions = props.courseInfo[0].unitPracticeTest;
+  var practiceTestQuestions =
+    props.courseInfo[props.selectedUnit].unitPracticeTest;
   console.log(practiceTestQuestions);
 
   const mappedPracticeTest = practiceTestQuestions.map((question) => {

@@ -1,26 +1,69 @@
 import "./LessonList.css";
-
+import styled from "styled-components";
 import { Row, Col } from "react-bootstrap";
 
 const LessonList = (props) => {
-  var lessons = props.courseInfo[0].unitLessons;
+  var lessons = props.courseInfo[props.selectedUnit].unitLessons;
   console.log(lessons);
+
+  const ColorSquare = styled.div.attrs((props) => ({
+    color: props.color
+  }))`
+    height: 25px;
+    width: 25px;
+    background-color: ${(props) => props.color};
+    border: 1px solid transparent;
+    border-radius: 3px;
+  `;
+
+  const TokenLL = styled.div.attrs((props) => ({
+    color: props.color
+  }))`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: ${(props) => props.color};
+    border-radius: 2px;
+  `;
+
+  const TokenLLDot = styled.div.attrs((props) => ({
+    color: props.color
+  }))`
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: ${(props) => props.color};
+  `;
 
   const mappedUnitLessons = lessons.map((lesson, i) => {
     //Set the bullet color and link color dynamically, based on the sub-topic of the lesson
     var color;
-    if (lesson.subtopic === 1) {
-      color = "rgba(255, 195, 0, 0.25)";
-    } else if (lesson.subtopic === 2) {
-      color = "rgba(3, 255, 6, 0.25)";
-    } else if (lesson.subtopic === 3) {
-      color = "rgba(255, 3, 243, 0.25)";
-    } else if (lesson.subtopic === 4) {
-      color = "rgba(3, 42, 255, 0.25)";
-    } else if (lesson.subtopic === 0) {
-      color = "rgba(255, 3, 3, 0.25)";
+    var colorToken;
+    var colorTokenDot;
+    var text;
+
+    if (lesson.completed) {
+      colorToken = "#e7f9ed";
+      colorTokenDot = "#52e583";
+      text = "Completed";
     } else {
-      color = "#121212";
+      colorToken = "#ffdad8";
+      colorTokenDot = "#ff8983";
+      text = "Incomplete";
+    }
+
+    if (lesson.subtopic === 1) {
+      color = "#9BD3CB";
+    } else if (lesson.subtopic === 2) {
+      color = "#f9d8cd";
+    } else if (lesson.subtopic === 3) {
+      color = "#AEDDE0";
+    } else if (lesson.subtopic === 4) {
+      color = "#C0ADC5";
+    } else {
+      color = "#777571";
     }
 
     return (
@@ -28,7 +71,7 @@ const LessonList = (props) => {
         <div className="itemContentContainer">
           <div className="col-2">
             <div className="justifyCenter">
-              <div className="colorSquare"></div>
+              <ColorSquare color={color}></ColorSquare>
             </div>
           </div>{" "}
           <div className="col-6">
@@ -38,17 +81,19 @@ const LessonList = (props) => {
           </div>
           <div className="col-2">
             <div className="justifyCenter">
-              <div className="subtopic">{lesson.subtopic}</div>
+              <div className="subtopic">
+                {lesson.subtopic === 0 ? null : lesson.subtopic}
+              </div>
             </div>
           </div>
           <div className="col-2">
             <div className="justifyCenter">
-              <div className="tokenLL">
+              <TokenLL color={colorToken}>
                 <div className="tokenContentContainerLL">
-                  <div className="tokenDotLL"></div>
-                  <div className="tokenTextLL">Completed</div>
+                  <TokenLLDot color={colorTokenDot}></TokenLLDot>
+                  <div className="tokenTextLL">{text}</div>
                 </div>
-              </div>
+              </TokenLL>
             </div>
           </div>
         </div>
