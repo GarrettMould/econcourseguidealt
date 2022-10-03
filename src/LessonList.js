@@ -35,6 +35,10 @@ const LessonList = (props) => {
     border-radius: 50%;
     margin-right: 10px;
     background-color: ${(props) => props.color};
+
+    @media (max-width: 768px) {
+      margin-right: 0px;
+    }
   `;
 
   const mappedUnitLessons = lessons.map((lesson, i) => {
@@ -74,24 +78,28 @@ const LessonList = (props) => {
               <ColorSquare color={color}></ColorSquare>
             </div>
           </div>{" "}
-          <div className="col-6">
-            <a href={lesson.link}>
+          <div className={props.isMobile ? "col-7" : "col-6"}>
+            <a href={lesson.link} target="_blank">
               <div className="lessonName">{lesson.name}</div>
             </a>{" "}
           </div>
-          <div className="col-2">
-            <div className="justifyCenter">
-              <div className="subtopic">
-                {lesson.subtopic === 0 ? null : lesson.subtopic}
+          {props.isMobile ? null : (
+            <div className="col-2">
+              <div className="justifyCenter">
+                <div className="subtopic">
+                  {lesson.subtopic === 0 ? null : lesson.subtopic}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-2">
+          )}
+          <div className={props.isMobile ? "col-3" : "col-2"}>
             <div className="justifyCenter">
               <TokenLL color={colorToken}>
                 <div className="tokenContentContainerLL">
                   <TokenLLDot color={colorTokenDot}></TokenLLDot>
-                  <div className="tokenTextLL">{text}</div>
+                  {props.isMobile ? null : (
+                    <div className="tokenTextLL">{text}</div>
+                  )}
                 </div>
               </TokenLL>
             </div>
@@ -103,18 +111,21 @@ const LessonList = (props) => {
   return (
     <div className="wrapper">
       <ul className="listLessons">
-        <li className="item" id="header">
-          <div className="itemContentContainer">
+        <li className="item">
+          <div className="itemContentContainer" id="header">
             <div className="col-2"></div>
-            <div className="col-6">
+            <div className={props.isMobile ? "col-7" : "col-6"}>
               <div className="heading">Lesson</div>
             </div>
-            <div className="col-2">
-              <div className="justifyCenter">
-                <div className="heading">Subtopic</div>
+            {props.isMobile ? null : (
+              <div className="col-2">
+                <div className="justifyCenter">
+                  <div className="heading">Subtopic</div>
+                </div>
               </div>
-            </div>
-            <div className="col-2">
+            )}
+
+            <div className={props.isMobile ? "col-3" : "col-2"}>
               <div className="justifyCenter">
                 <div className="heading">Status</div>
               </div>

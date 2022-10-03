@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { LockSimple } from "phosphor-react";
+import padlock from "../src/images/padlock.png";
 
 const Button = (props) => {
   const StyledButton = styled.button.attrs((props) => ({
@@ -25,10 +25,16 @@ const Button = (props) => {
   `;
 
   return (
-    <StyledButton>
+    <StyledButton
+      className={
+        props.courseInfo[props.selectedUnit].unitTestUnlocked
+          ? null
+          : "disabled-link"
+      }
+    >
       {props.text} &nbsp;&nbsp;{" "}
       {props.courseInfo[props.selectedUnit].unitTestUnlocked ? null : (
-        <LockSimple size={30} weight="thin" />
+        <img className="padlock" src={padlock}></img>
       )}
     </StyledButton>
   );

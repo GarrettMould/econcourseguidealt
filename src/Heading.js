@@ -6,6 +6,10 @@ const Heading = (props) => {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     padding: 40px 0px;
+
+    @media (max-width: 768px) {
+      font-size: 150%;
+    }
   `;
   return <StyledHeading>{props.text}</StyledHeading>;
 };

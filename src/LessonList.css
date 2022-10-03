@@ -35,18 +35,15 @@ a:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
+#header:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .heading {
   font-family: "Roboto", sans-serif;
   font-size: 130%;
   font-weight: 700;
-}
-
-.colorSquare {
-  height: 25px;
-  width: 25px;
-  background-color: aquamarine;
-  border: 1px solid transparent;
-  border-radius: 3px;
 }
 
 .lessonName {
@@ -89,4 +86,20 @@ a:hover {
 .tokenTextLL {
   font-family: "Roboto", sans-serif;
   font-size: 75%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 110%;
+  }
+
+  .lessonName {
+    width: 90%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+  }
 }

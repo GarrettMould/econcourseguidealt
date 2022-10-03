@@ -1,5 +1,7 @@
 import "./ExtraResources.css";
 
+import { Container, Row, Col } from "react-bootstrap";
+
 import styled from "styled-components";
 
 const ExtraResources = (props) => {
@@ -11,6 +13,28 @@ const ExtraResources = (props) => {
     background-color: ${(props) => props.color};
     border: 1px solid transparent;
     border-radius: 3px;
+  `;
+
+  const TokenER = styled.div.attrs((props) => ({
+    color: props.color
+  }))`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: ${(props) => props.color};
+    border-radius: 2px;
+    max-height: 45px;
+  `;
+
+  const TokenDotER = styled.div.attrs((props) => ({
+    color: props.color
+  }))`
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: ${(props) => props.color};
   `;
 
   var extraResources = props.courseInfo[props.selectedUnit].additionalResources;
@@ -31,34 +55,52 @@ const ExtraResources = (props) => {
     }
 
     return (
-      <li className="card">
-        <div className="cardRowOne">
-          <ColorSquare color={color}></ColorSquare>
-          <div className="cardType">{resource.type}</div>
-        </div>
-        <div className="cardRowTwo">
-          <a href="#">
-            <div className="cardTitle">{resource.name}</div>
-          </a>
-
-          <div className="cardDescription">{resource.summary}</div>
-        </div>
-
-        <div className="cardRowFour">
-          <div className="tokenER">
-            <div className="tokenContentContainerER">
-              <div className="tokenDotER"></div>
-              <div className="tokenTextER">Allocative Efficiency</div>
-            </div>
+      <div className="col-4">
+        <li className="card">
+          <div className="cardRowOne">
+            <ColorSquare color={color}></ColorSquare>
+            <div className="cardType">{resource.type}</div>
           </div>
-          <div className="tokenER">
-            <div className="tokenContentContainerER">
-              <div className="tokenDotER"></div>
-              <div className="tokenTextER">Allocative Efficiency</div>
-            </div>
+          <div className="cardRowTwo">
+            <a href={resource.link} target="_blank">
+              <div className="cardTitle">{resource.name}</div>
+            </a>
+
+            <div className="cardDescription">{resource.summary}</div>
           </div>
-        </div>
-      </li>
+
+          <div className="cardRowFour">
+            {resource.concepts.map((concept, i) => {
+              var colorBackground;
+              var colorDot;
+              if (concept.subtopic === 1) {
+                colorDot = "#9BD3CB";
+                colorBackground = "#e2f2f0";
+              } else if (concept.subtopic === 2) {
+                colorDot = "#f9d8cd";
+                colorBackground = "#fdf0eb";
+              } else if (concept.subtopic === 3) {
+                colorDot = "#AEDDE0";
+                colorBackground = "#ebf7f8";
+              } else if (concept.subtopic === 4) {
+                colorDot = "#C0ADC5";
+                colorBackground = "#eee9ef";
+              } else {
+                colorDot = "#777571";
+                colorBackground = "#5d5b58";
+              }
+              return (
+                <TokenER color={colorBackground}>
+                  <div className="tokenContentContainerER">
+                    <TokenDotER color={colorDot}></TokenDotER>
+                    <div className="tokenTextER">{concept.name}</div>
+                  </div>
+                </TokenER>
+              );
+            })}
+          </div>
+        </li>
+      </div>
     );
   });
   return (

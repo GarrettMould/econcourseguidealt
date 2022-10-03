@@ -1,28 +1,18 @@
 import "./styles.css";
 
+import { Routes, Route, Link } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { useState } from "react";
-
-import Spacer from "./Spacer";
+import { useState, useEffect } from "react";
 
 import WebsiteTitle from "./WebsiteTitle";
 
 import CourseHomePage from "./CourseHomePage";
 
-import "./LessonList";
-import LessonList from "./LessonList";
+import UnitOverviewPage from "./MainPages/UnitOverviewPage";
 
-import "./Tokens";
-import Tokens from "./Tokens";
-
-import ExtraResources from "./ExtraResources";
-
-import PracticeTest from "./PracticeTest";
-
-import Heading from "./Heading";
-
-import Button from "./Button";
+import PracticeTestPage from "./MainPages/PracticeTestPage";
 
 import { courseInformation } from "./CourseInformation";
 
@@ -32,6 +22,26 @@ const App = (props) => {
   const [selectedUnitDisplay, setSelectedUnitDisplay] = useState(
     selectedUnit + 1
   );
+  const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
+
+  // Reading device width and updating state on change
+  useEffect(() => {
+    handleWindowSizeChange();
+  });
+
+  const handleWindowSizeChange = () => {
+    setDeviceWidth(window.innerWidth);
+  };
+
+  window.addEventListener("resize", handleWindowSizeChange);
+
+  console.log(deviceWidth);
+
+  // Variable that returns true if device width is less than 500 (use this for mobile styling)
+
+  const isMobile = deviceWidth <= 500;
+
+  console.log(isMobile);
 
   const updateSelectedUnit = (e) => {
     var id = e.currentTarget.id;
@@ -54,45 +64,43 @@ const App = (props) => {
 
   return (
     <>
-      <div className="container">
+      <div className="containerApp">
         <WebsiteTitle></WebsiteTitle>
-        <CourseHomePage
-          courseInfo={courseInfo}
-          updateSelectedUnit={updateSelectedUnit}
-        ></CourseHomePage>
-        <Heading text={`Unit ${unit} - Lesson Materials`}></Heading>
-        <LessonList
-          courseInfo={courseInfo}
-          selectedUnit={selectedUnit}
-        ></LessonList>
-        <Spacer></Spacer>
-        <Heading text={`Unit ${unit} - Important Concepts`}></Heading>
-        <Tokens courseInfo={courseInfo} selectedUnit={selectedUnit}></Tokens>
-        <Spacer></Spacer>
-        <Heading text={`Unit ${unit} - Extra Resources`}></Heading>
-        <ExtraResources
-          courseInfo={courseInfo}
-          selectedUnit={selectedUnit}
-        ></ExtraResources>
-        <Spacer></Spacer>
-
-        <Button
-          selectedUnit={selectedUnit}
-          courseInfo={courseInfo}
-          text={`Unit ${unit} Practice Test`}
-        ></Button>
-        <Spacer></Spacer>
-        <Heading text={`Unit ${unit} - Practice Test`}></Heading>
-        <PracticeTest
-          courseInfo={courseInfo}
-          selectedUnit={selectedUnit}
-        ></PracticeTest>
-        <Spacer></Spacer>
-        <Button
-          selectedUnit={selectedUnit}
-          courseInfo={courseInfo}
-          text="Submit"
-        ></Button>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <CourseHomePage
+                isMobile={isMobile}
+                courseInfo={courseInfo}
+                selectedUnit={selectedUnit}
+                updateSelectedUnit={updateSelectedUnit}
+              ></CourseHomePage>
+            }
+          />
+          <Route
+            path="/UnitOverviewPage"
+            element={
+              <UnitOverviewPage
+                unit={unit}
+                isMobile={isMobile}
+                courseInfo={courseInfo}
+                selectedUnit={selectedUnit}
+                updateSelectedUnit={updateSelectedUnit}
+              ></UnitOverviewPage>
+            }
+          />
+          <Route
+            path="/UnitPracticeTest"
+            element={
+              <PracticeTestPage
+                unit={unit}
+                courseInfo={courseInfo}
+                selectedUnit={selectedUnit}
+              ></PracticeTestPage>
+            }
+          />
+        </Routes>
       </div>
     </>
   );

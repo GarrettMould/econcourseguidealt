@@ -48,7 +48,24 @@
 }
 
 .unitName {
-  font-size: 150%;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 140%;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
+}
+
+.svgContainer {
+  max-width: 20px;
+  padding-bottom: 5px;
+}
+
+.padlock {
+  max-width: 20px;
+}
+
+.nameIconContainer {
+  display: flex;
+  align-items: center;
 }

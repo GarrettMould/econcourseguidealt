@@ -68,21 +68,13 @@
 }
 
 .cardRowFour {
+  width: 100%;
   justify-self: end;
   background-color: rgba(245, 245, 245, 0.416);
   padding: 20px;
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-}
-
-.tokenER {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  background-color: #e7f9ed;
-  border-radius: 2px;
 }
 
 .tokenContentContainerER {
@@ -92,17 +84,22 @@
   padding: 10px 15px;
 }
 
-.tokenDotER {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background-color: #52e583;
-}
-
 .tokenTextER {
   font-family: "Roboto", sans-serif;
   font-size: 80%;
 }
 
-/* Scrollbar Styling */
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 110%;
+  }
+
+  .cardDescription {
+    font-size: 100%;
+    line-height: 200%;
+    font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+  }
+}

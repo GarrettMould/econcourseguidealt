@@ -158,7 +158,7 @@ export var courseInformation = [
       {
         name: "U1-L10: The Law of Demand",
         subtopic: 4,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1XDwf1OhOgJDjZ-CQ-Cptlxqf4T9uCsmlFonEQMpJ5QM/edit?usp=sharing"
       },
@@ -195,8 +195,8 @@ export var courseInformation = [
           "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
         concepts: [
-          { name: "Scarcity", subTopic: 1 },
-          { name: "Opportunity Costs", subTopic: 1 }
+          { name: "Scarcity", subtopic: 1 },
+          { name: "Opportunity Costs", subtopic: 1 }
         ]
       },
       {
@@ -207,8 +207,8 @@ export var courseInformation = [
         link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
         subtopic: 2,
         concepts: [
-          { name: "3 Basic Questions", subTopic: 2 },
-          { name: "Economic Systems", subTopic: 2 }
+          { name: "3 Basic Questions", subtopic: 2 },
+          { name: "Economic Systems", subtopic: 2 }
         ]
       },
       {
@@ -219,9 +219,9 @@ export var courseInformation = [
         link: "https://www.investopedia.com/terms/i/invisiblehand.asp",
         subtopic: 3,
         concepts: [
-          { name: "Economic Systems", subTopic: 2 },
-          { name: "The Invisible Hand", subTopic: 3 },
-          { name: "Self-Interest", subTopic: 3 }
+          { name: "Economic Systems", subtopic: 2 },
+          { name: "The Invisible Hand", subtopic: 3 },
+          { name: "Self-Interest", subtopic: 3 }
         ]
       },
       {
@@ -232,9 +232,9 @@ export var courseInformation = [
         link: "https://www.heritage.org/index/ranking",
         subtopic: 3,
         concepts: [
-          { name: "Economic Systems", subTopic: 2 },
-          { name: "3 Basic Questions", subTopic: 2 },
-          { name: "Property Rights", subTopic: 3 }
+          { name: "Economic Systems", subtopic: 2 },
+          { name: "3 Basic Questions", subtopic: 2 },
+          { name: "Property Rights", subtopic: 3 }
         ]
       },
       {
@@ -246,9 +246,9 @@ export var courseInformation = [
           "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
         concepts: [
-          { name: "Equilibrium", subTopic: 4 },
-          { name: "Determinants of Supply", subTopic: 4 },
-          { name: "Determinants of Demand", subTopic: 4 }
+          { name: "Equilibrium", subtopic: 4 },
+          { name: "Determinants of Supply", subtopic: 4 },
+          { name: "Determinants of Demand", subtopic: 4 }
         ]
       }
     ],
@@ -665,7 +665,7 @@ export var courseInformation = [
       {
         name: "U2-L2: Production Possibilities Curves",
         subtopic: 1,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1XvQoX09qWH5uL1ZTfeQDwfUTvle83DhrEP8ckgRQqqY/edit?usp=sharing"
       },
@@ -702,7 +702,7 @@ export var courseInformation = [
         subtopic: 3,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1GNHZS574FeQ_E-C-RRFZY4q4yftjNTCRVW73Lj6Q_-A/edit?usp=sharing"
       },
       {
         name: "U2-L8: Economic Growth and Capital",
@@ -734,7 +734,7 @@ export var courseInformation = [
           "A simple explanation of the factors of production and why money is not considered a factor of production.",
         link: "https://www.youtube.com/watch?v=VZD7dTSHmIo",
         subtopic: 1,
-        concepts: [{ name: "Factors of Production", subTopic: 1 }]
+        concepts: [{ name: "Factors of Production", subtopic: 1 }]
       },
       {
         name: "The Minimum Wage: Does it Hurt Workers?",
@@ -744,9 +744,9 @@ export var courseInformation = [
         link: "https://www.youtube.com/watch?v=8H4yp8Fbi-Y",
         subtopic: 3,
         concepts: [
-          { name: "Minimum Wage", subTopic: 3 },
-          { name: "Price Floors", subTopic: 3 },
-          { name: "Outsourcing", subTopic: 4 }
+          { name: "Minimum Wage", subtopic: 3 },
+          { name: "Price Floors", subtopic: 3 },
+          { name: "Outsourcing", subtopic: 4 }
         ]
       },
       {
@@ -757,8 +757,8 @@ export var courseInformation = [
         link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
         subtopic: 3,
         concepts: [
-          { name: "Minimum Wage", subTopic: 3 },
-          { name: "Price Floors", subTopic: 3 }
+          { name: "Minimum Wage", subtopic: 3 },
+          { name: "Price Floors", subtopic: 3 }
         ]
       },
       {
@@ -769,8 +769,8 @@ export var courseInformation = [
         link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
         subtopic: 3,
         concepts: [
-          { name: "Minimum Wage", subTopic: 3 },
-          { name: "Price Floors", subTopic: 3 }
+          { name: "Minimum Wage", subtopic: 3 },
+          { name: "Price Floors", subtopic: 3 }
         ]
       }
     ],
@@ -1110,8 +1110,8 @@ export var courseInformation = [
         link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
         subtopic: 3,
         concepts: [
-          { name: "3 Basic Questions", subTopic: 2 },
-          { name: "Economic Systems", subTopic: 2 }
+          { name: "3 Basic Questions", subtopic: 2 },
+          { name: "Economic Systems", subtopic: 2 }
         ]
       },
       {
@@ -1123,8 +1123,8 @@ export var courseInformation = [
           "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 1,
         concepts: [
-          { name: "Scarcity", subTopic: 1 },
-          { name: "Opportunity Costs", subTopic: 1 }
+          { name: "Scarcity", subtopic: 1 },
+          { name: "Opportunity Costs", subtopic: 1 }
         ]
       },
       {
@@ -1136,8 +1136,8 @@ export var courseInformation = [
           "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 2,
         concepts: [
-          { name: "Scarcity", subTopic: 1 },
-          { name: "Non-Price Rationing", subTopic: 2 }
+          { name: "Scarcity", subtopic: 1 },
+          { name: "Non-Price Rationing", subtopic: 2 }
         ]
       },
       {
@@ -1149,9 +1149,9 @@ export var courseInformation = [
           "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
         subtopic: 3,
         concepts: [
-          { name: "Scarcity", subTopic: 1 },
-          { name: "3 Basic Questions", subTopic: 3 },
-          { name: "Economic Systems", subTopic: 3 }
+          { name: "Scarcity", subtopic: 1 },
+          { name: "3 Basic Questions", subtopic: 3 },
+          { name: "Economic Systems", subtopic: 3 }
         ]
       },
       {
@@ -1163,9 +1163,9 @@ export var courseInformation = [
           "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
         subtopic: 4,
         concepts: [
-          { name: "Equilibrium", subTopic: 4 },
-          { name: "Determinants of Supply", subTopic: 4 },
-          { name: "Determinants of Demand", subTopic: 4 }
+          { name: "Equilibrium", subtopic: 4 },
+          { name: "Determinants of Supply", subtopic: 4 },
+          { name: "Determinants of Demand", subtopic: 4 }
         ]
       }
     ],

@@ -1,4 +1,25 @@
-.container {
-  width: 90%;
+.containerApp {
+  width: 100%;
   padding: 30px;
+}
+
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.disabled-link:hover {
+  cursor: not-allowed;
+}
+
+.enabled-link {
+  pointer-events: auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .containerApp {
+    padding: 10px 10px 30px 10px;
+  }
 }
