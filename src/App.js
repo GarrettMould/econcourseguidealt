@@ -111,6 +111,13 @@ const App = (props) => {
 
     // Runs if all questions have been answered
     if (question.length === questionsLength) {
+      var questions = document.querySelectorAll(".cardTest");
+
+      // Loop through all cardTest elements and remove the red border class
+      questions.forEach((elem) => {
+        elem.classList.remove("redBorder");
+      });
+
       question.forEach((q) => {
         if (q.value === "true") {
           localScore = localScore + 1;
@@ -122,13 +129,11 @@ const App = (props) => {
           incorrectQuestion.classList.add("red");
         }
         //Set the final score and set the test to finished (which causes resultsBox to be displayed)
-        forwardedRef.current.scrollIntoView({ behavior: "smooth" });
+
         setUnitTestScore(localScore);
         setTestFinished(true);
-        console.log(localScore);
-        console.log(unitTestScore);
       });
-
+      forwardedRef.current.scrollIntoView({ behavior: "smooth" });
       setIncorrectQuestionsList(incorrectQuestions);
 
       // Run this if there are unanswered questions
@@ -143,6 +148,7 @@ const App = (props) => {
   // Reset the test
 
   const resetTest = () => {
+    forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     setUnansweredQuestions(false);
     setIncorrectQuestionsList([]);
     setTestFinished(false);
@@ -157,11 +163,12 @@ const App = (props) => {
       }
     }
 
-    var questionCard = document.querySelector(".cardTest");
+    var questions = document.querySelectorAll(".cardTest");
 
-    questionCard.classList.remove("red");
-
-    forwardedRef.current.scrollIntoView({ behavior: "smooth" });
+    // Loop through all cardTest elements and remove the red class
+    questions.forEach((elem) => {
+      elem.classList.remove("red");
+    });
   };
 
   return (

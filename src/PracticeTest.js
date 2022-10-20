@@ -1,9 +1,11 @@
 import "./PracticeTest.css";
-import TestScore from "./TestScore";
+
 const PracticeTest = ({ forwardedRef, ...props }) => {
   var practiceTestQuestions =
     props.courseInfo[props.selectedUnit].unitPracticeTest;
   console.log(practiceTestQuestions);
+
+  console.log(props.testFinished);
 
   const mappedPracticeTest = practiceTestQuestions.map((question, i) => {
     return (
@@ -23,6 +25,7 @@ const PracticeTest = ({ forwardedRef, ...props }) => {
               <input
                 type="radio"
                 className="testRadio"
+                disabled={props.testFinished ? true : false}
                 name={question.questionNumber}
                 value={question.options[0].isCorrect}
               ></input>
@@ -32,6 +35,7 @@ const PracticeTest = ({ forwardedRef, ...props }) => {
               <input
                 type="radio"
                 className="testRadio"
+                disabled={props.testFinished ? true : false}
                 name={question.questionNumber}
                 value={question.options[1].isCorrect}
               ></input>
@@ -41,6 +45,7 @@ const PracticeTest = ({ forwardedRef, ...props }) => {
               <input
                 type="radio"
                 className="testRadio"
+                disabled={props.testFinished ? true : false}
                 name={question.questionNumber}
                 value={question.options[2].isCorrect}
               ></input>
@@ -50,6 +55,7 @@ const PracticeTest = ({ forwardedRef, ...props }) => {
               <input
                 type="radio"
                 className="testRadio"
+                disabled={props.testFinished ? true : false}
                 name={question.questionNumber}
                 value={question.options[3].isCorrect}
               ></input>
