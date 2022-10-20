@@ -31,6 +31,7 @@ const Button = (props) => {
           ? null
           : "disabled-link"
       }
+      onClick={props.tallyScore}
     >
       {props.text} &nbsp;&nbsp;{" "}
       {props.courseInfo[props.selectedUnit].unitTestUnlocked ? null : (

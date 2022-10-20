@@ -23,3 +23,11 @@
     padding: 10px 10px 30px 10px;
   }
 }
+
+.red {
+  background-color: red;
+}
+
+.redBorder {
+  border: 2px solid #ef535074 !important;
+}

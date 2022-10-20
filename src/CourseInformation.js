@@ -672,28 +672,28 @@ export var courseInformation = [
       {
         name: "U2-L3: Forming a Business",
         subtopic: 2,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1WdZI7gANtLxtHXyjSGlrAJPKkeaW4vFgcvgIAuJTkQs/edit?usp=sharing"
       },
       {
         name: "U2-L4: Types of Businesses",
         subtopic: 2,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1AotFtQYXz3ovcYRJP0a_o_JfQkdEu2DmY_1QUMfkGIU/edit?usp=sharing"
       },
       {
         name: "U2-L5: Labor and Labor Unions",
         subtopic: 3,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1ZOpgAsknvDWSLh45wxX4gC7R1ALBLbOGmfnw2GCgFl8/edit?usp=sharing"
       },
       {
         name: "U2-L6: The Supply and Demand of Labor",
         subtopic: 3,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing"
       },
@@ -727,6 +727,31 @@ export var courseInformation = [
       }
     ],
     additionalResources: [
+      {
+        name: "Fear the Boom and Bust: Keynes vs. Hayek",
+        type: "YouTube Video",
+        summary:
+          "An entertaining and informative rap batttle between two economics heavyweights, Hayek and Keynes.",
+        link: "https://www.youtube.com/watch?v=d0nERTFo-Sk&t=340s",
+        subtopic: 3,
+        concepts: [
+          { name: "Minimum Wage", subtopic: 3 },
+          { name: "Price Floors", subtopic: 3 },
+          { name: "Signs of Economic Growth", subtopic: 4 }
+        ]
+      },
+      {
+        name: "Take Home Activity - Supply and Demand Quiz",
+        type: "Quizizz",
+        summary:
+          "A take home activity to review the concepts of supply and demand.",
+        link: "https://quizizz.com/join?gc=42930403",
+        subtopic: 3,
+        concepts: [
+          { name: "Minimum Wage", subtopic: 3 },
+          { name: "Price Floors", subtopic: 3 }
+        ]
+      },
       {
         name: "Factors of Production Explained",
         type: "YouTube Video",
@@ -762,15 +787,37 @@ export var courseInformation = [
         ]
       },
       {
-        name: "Minimum Wage and Price Floors",
+        name: "How the Dollar Gets Its Value",
         type: "YouTube Video",
         summary:
-          "A Khan Academy breakdown of the economic impact that minimum wage, and price floors in general, have on markets.",
-        link: "https://www.youtube.com/watch?v=j0c2vmFGbtk",
+          "A Ted Ed video by Doug Levinson that explains how the US dollar and other currencies get their value.",
+        link: "https://www.youtube.com/watch?v=XNu5ppFZbHo",
+        subtopic: 2,
+        concepts: [{ name: "Debt Financing", subtopic: 2 }]
+      },
+      {
+        name: "Sri Lanka's Foreign Exchange Problem",
+        type: "Podcast",
+        summary:
+          "Planet Money podcast that explores Sri Lanka's debt problem and the role that the strengthening of the US dollar has played in the crisis.",
+        link:
+          "https://podcasts.apple.com/ca/podcast/sri-lankas-foreign-exchange-problem/id1320118593?i=1000558801288",
+        subtopic: 2,
+        concepts: [
+          { name: "Equity Financing", subtopic: 2 },
+          { name: "Debt Financing", subtopic: 2 }
+        ]
+      },
+      {
+        name: "How does raising interest rates control inflation?",
+        type: "YouTube Video",
+        summary:
+          "A great video that explains how raising interest rates helps control inflation.",
+        link: "https://www.youtube.com/watch?v=R8VBRCs2jTU",
         subtopic: 3,
         concepts: [
-          { name: "Minimum Wage", subtopic: 3 },
-          { name: "Price Floors", subtopic: 3 }
+          { name: "Equity Financing", subtopic: 2 },
+          { name: "Debt Financing", subtopic: 2 }
         ]
       }
     ],

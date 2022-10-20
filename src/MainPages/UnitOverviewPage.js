@@ -5,6 +5,7 @@ import Tokens from "../Tokens";
 import ExtraResources from "../ExtraResources";
 import ExtraResourcesMobile from "../ExtraResourcesMobile";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 const UnitOverviewPage = (props) => {
   return (
@@ -39,11 +40,13 @@ const UnitOverviewPage = (props) => {
         ></ExtraResources>
       )}
       <Spacer></Spacer>
-      <Button
-        selectedUnit={props.selectedUnit}
-        courseInfo={props.courseInfo}
-        text={`Unit ${props.unit} Practice Test`}
-      ></Button>
+      <Link to="/UnitPracticeTest">
+        <Button
+          selectedUnit={props.selectedUnit}
+          courseInfo={props.courseInfo}
+          text={`Unit ${props.unit} Practice Test`}
+        ></Button>
+      </Link>
     </>
   );
 };
