@@ -4,7 +4,7 @@ const TestScore = (props) => {
   return (
     <div className="testScoreContainer">
       <div className="testScore">
-        <span className="scoreBold">Score:</span> {props.unitTestScore} /{" "}
+        <span className="scoreBold">Final Score:</span> {props.unitTestScore} /{" "}
         {props.unitTestLength}
       </div>
     </div>

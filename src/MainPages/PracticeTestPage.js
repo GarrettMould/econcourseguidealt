@@ -4,6 +4,7 @@ import Spacer from "../Spacer";
 import PracticeTest from "../PracticeTest";
 import { Link } from "react-router-dom";
 import TestScore from "../TestScore";
+import ButtonResetTest from "../ButtonResetTest";
 
 const PracticeTestPage = (props) => {
   return (
@@ -22,20 +23,14 @@ const PracticeTestPage = (props) => {
         testFinished={props.testFinished}
       ></PracticeTest>
       <Spacer></Spacer>
-      <button onClick={props.tallyScore}></button>
 
-      {props.testFinished ? (
-        <button onClick={props.resetTest}>Reset Test</button>
-      ) : (
-        <Link>
-          <Button
-            selectedUnit={props.selectedUnit}
-            courseInfo={props.courseInfo}
-            tallyScore={props.tallyScore}
-            text="Submit"
-          ></Button>
-        </Link>
-      )}
+      <Link>
+        <ButtonResetTest
+          testFinished={props.testFinished}
+          tallyScore={props.tallyScore}
+          resetTest={props.resetTest}
+        ></ButtonResetTest>
+      </Link>
     </>
   );
 };
