@@ -1,3 +1,7 @@
+import question_4 from "../src/images/question_4.png";
+import question_5 from "../src/images/question_5.png";
+import question_6 from "../src/images/question_6.png";
+
 export var courseInformation = [
   {
     id: 0,
@@ -700,7 +704,7 @@ export var courseInformation = [
       {
         name: "U2-L7: Trade, Jobs, and Careers",
         subtopic: 3,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1GNHZS574FeQ_E-C-RRFZY4q4yftjNTCRVW73Lj6Q_-A/edit?usp=sharing"
       },
@@ -842,144 +846,314 @@ export var courseInformation = [
         questionNumber: 2,
         subtopic: 1,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Points of allocative efficiency can be found __________________ the PPC. ",
         options: [
           {
             name: "factors of production / resources",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "under", id: 2, isCorrect: false },
+          { name: "beyond", id: 3, isCorrect: false },
+          { name: "along", id: 4, isCorrect: true }
         ]
       },
       {
         questionNumber: 3,
         subtopic: 1,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "The knowledge of engineering used by employees at a car manufacturing company to produce vehicles is an example of which factor of production?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "labor",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          {
+            name: "physical capital",
+            id: 2,
+            isCorrect: false
+          },
+          {
+            name: "human capital",
+            id: 3,
+            isCorrect: true
+          },
+          { name: "entreprenuership", id: 4, isCorrect: false }
         ]
       },
       {
         questionNumber: 4,
         subtopic: 2,
+        image: question_4,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Wine & Cotton Incorporated is using all of it's resources efficiently. Which point could describe their production?",
         options: [
           {
-            name: "factors of production / resources",
+            name: "A",
             id: 1,
-            isCorrect: false
+            isCorrect: true
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "X", id: 2, isCorrect: false },
+          { name: "Y", id: 3, isCorrect: false },
+          { name: "none of the above", id: 4, isCorrect: false }
         ]
       },
       {
         questionNumber: 5,
         subtopic: 2,
+        image: question_5,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Which of the following best explains the shift in Wine & Cotton Incorporated's PPC?",
         options: [
           {
-            name: "factors of production / resources",
+            name:
+              "new management implements more efficient production procedures",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          {
+            name:
+              "an increase in global population leads to increased demand for their products",
+            id: 2,
+            isCorrect: false
+          },
+          {
+            name:
+              "a sudden drought makes it more difficult to produce wine and cotton",
+            id: 3,
+            isCorrect: false
+          },
+          {
+            name:
+              "new investors provide additional money that is used to increase production",
+            id: 4,
+            isCorrect: true
+          }
         ]
       },
       {
         questionNumber: 6,
         subtopic: 2,
+        image: question_6,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "What is the opportunity cost of moving from point D to point J? ",
         options: [
           {
-            name: "factors of production / resources",
+            name: "6 storage sheds",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "9 storage sheds", id: 2, isCorrect: false },
+          { name: "225 crab puffs", id: 3, isCorrect: true },
+          { name: "425 crab puffs", id: 4, isCorrect: false }
         ]
       },
       {
         questionNumber: 7,
         subtopic: 3,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "What is the opportunity cost of moving from point J to point D? ",
         options: [
           {
-            name: "factors of production / resources",
+            name: "225 crab puffs",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "6 storage sheds", id: 2, isCorrect: true },
+          { name: "9 storage sheds", id: 3, isCorrect: false },
+          { name: "425 crab puffs", id: 4, isCorrect: false }
         ]
       },
       {
         questionNumber: 8,
         subtopic: 3,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          " _______________ are a form of debt financing and ___________ is a form of equity financing.",
         options: [
           {
-            name: "factors of production / resources",
+            name: "bonds / stock",
             id: 1,
-            isCorrect: false
+            isCorrect: true
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "stock / bonds", id: 2, isCorrect: false }
         ]
       },
       {
         questionNumber: 9,
         subtopic: 4,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "Which of the following is an advantage of debt financing?",
         options: [
           {
-            name: "factors of production / resources",
+            name:
+              "Businesses are able to raise money from the general public on the stock market",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          {
+            name:
+              "Businesses are able to raise money without losing equity in their business",
+            id: 2,
+            isCorrect: true
+          },
+          {
+            name:
+              "Businesses do not owe interest on their debt when using debt financing",
+            id: 3,
+            isCorrect: false
+          }
         ]
       },
       {
         questionNumber: 10,
         subtopic: 4,
         questionText:
-          "A Production Possibilities Curve shows the different combinations of _________________ that can be produced using limited ________________. ",
+          "This type of business often sells shares of their company on publicly traded stock markets.",
         options: [
           {
-            name: "factors of production / resources",
+            name: "sole proprietorship",
             id: 1,
             isCorrect: false
           },
-          { name: "resources / goods", id: 2, isCorrect: false },
-          { name: "goods / resources", id: 3, isCorrect: true },
-          { name: "demand / resources", id: 4, isCorrect: false }
+          { name: "partnerships", id: 2, isCorrect: false },
+          { name: "joint venture", id: 3, isCorrect: false },
+          { name: "corporation", id: 4, isCorrect: true }
+        ]
+      },
+      {
+        questionNumber: 11,
+        subtopic: 4,
+        questionText:
+          "This type of business is owned and operated by one individual.",
+        options: [
+          {
+            name: "sole proprietorship",
+            id: 1,
+            isCorrect: true
+          },
+          { name: "partnerships", id: 2, isCorrect: false },
+          { name: "joint venture", id: 3, isCorrect: false },
+          { name: "corporation", id: 4, isCorrect: false }
+        ]
+      },
+      {
+        questionNumber: 12,
+        subtopic: 4,
+        questionText:
+          " This type of business is a type partnership between two existing companies.",
+        options: [
+          {
+            name: "sole proprietorship",
+            id: 1,
+            isCorrect: false
+          },
+          { name: "partnerships", id: 2, isCorrect: false },
+          { name: "joint venture", id: 3, isCorrect: true },
+          { name: "corporation", id: 4, isCorrect: false }
+        ]
+      },
+      {
+        questionNumber: 13,
+        subtopic: 4,
+        questionText: "Which of the following best describes a price floor? ",
+        options: [
+          {
+            name:
+              "A form of price control that is set below equilibrium price and often causes a surplus",
+            id: 1,
+            isCorrect: false
+          },
+          {
+            name:
+              "A form of price control that is set below equilibrium price and often causes a shortage",
+            id: 2,
+            isCorrect: false
+          },
+          {
+            name:
+              "A form of price control that is set above equilibrium price and often causes a surplus",
+            id: 3,
+            isCorrect: true
+          },
+          {
+            name:
+              "A form of price control that is set below equilibrium price and often causes a shortage",
+            id: 4,
+            isCorrect: false
+          }
+        ]
+      },
+      {
+        questionNumber: 14,
+        subtopic: 4,
+        questionText:
+          "_________________ involves a company opening branches in a foreign country, or investing in existing businesses within that country. ",
+        options: [
+          {
+            name: "outsourcing",
+            id: 1,
+            isCorrect: false
+          },
+          { name: "foreign direct investment (FDI)", id: 2, isCorrect: true },
+          { name: "joint venture", id: 3, isCorrect: false },
+          { name: "corporation", id: 4, isCorrect: false }
+        ]
+      },
+      {
+        questionNumber: 15,
+        subtopic: 4,
+        questionText:
+          "In a previous lesson we learned about a problem that many countries face, called 'Brain Drain.' What affect does 'Brain Drain' likely have on a country's PPC? ",
+        options: [
+          {
+            name: "a leftward shift of the PPC",
+            id: 1,
+            isCorrect: true
+          },
+          { name: "a rightward shift of the PPC", id: 2, isCorrect: false },
+          { name: "no impact on the PPC", id: 3, isCorrect: false }
+        ]
+      },
+      {
+        questionNumber: 16,
+        subtopic: 4,
+        questionText:
+          "Which of the following would be considered an investment in human capital?",
+        options: [
+          {
+            name:
+              "funding research to develop better national defense technology",
+            id: 1,
+            isCorrect: false
+          },
+          { name: "funding infrastructure projects", id: 2, isCorrect: false },
+          {
+            name: "funding offshore drilling to increase energy production",
+            id: 3,
+            isCorrect: false
+          },
+          { name: "funding public health initiatives", id: 4, isCorrect: true }
+        ]
+      },
+      {
+        questionNumber: 17,
+        subtopic: 4,
+        questionText:
+          "Which of the following is NOT a sign of economic growth? ",
+        options: [
+          {
+            name: "increased consumption",
+            id: 1,
+            isCorrect: false
+          },
+          { name: "increase in the budget deficit", id: 2, isCorrect: true },
+          {
+            name: "increase in production",
+            id: 3,
+            isCorrect: false
+          },
+          { name: "increase in employment", id: 4, isCorrect: false }
         ]
       }
     ]

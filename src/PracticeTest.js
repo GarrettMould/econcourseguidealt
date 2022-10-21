@@ -18,49 +18,68 @@ const PracticeTest = ({ forwardedRef, ...props }) => {
           <div className="testQuestion">
             {question.questionNumber}) {question.questionText}{" "}
           </div>
+          {question.image ? (
+            <img
+              alt="alt"
+              className="testQuestionImage"
+              src={question.image}
+            ></img>
+          ) : null}
         </div>
         <div className="cardTestRowTwo">
           <div className="testAnswersGroup">
             <div className="testAnswerContainer">
-              <input
-                type="radio"
-                className="testRadio"
-                disabled={props.testFinished ? true : false}
-                name={question.questionNumber}
-                value={question.options[0].isCorrect}
-              ></input>
-              <label className="testAnswerText">central planning</label>
+              <label className="testAnswerText">
+                <input
+                  type="radio"
+                  className="testRadio"
+                  disabled={props.testFinished ? true : false}
+                  name={question.questionNumber}
+                  value={question.options[0].isCorrect}
+                ></input>
+                {question.options[0].name}
+              </label>
             </div>
             <div className="testAnswerContainer">
-              <input
-                type="radio"
-                className="testRadio"
-                disabled={props.testFinished ? true : false}
-                name={question.questionNumber}
-                value={question.options[1].isCorrect}
-              ></input>
-              <label className="testAnswerText">non-price rationing</label>
+              <label className="testAnswerText">
+                <input
+                  type="radio"
+                  className="testRadio"
+                  disabled={props.testFinished ? true : false}
+                  name={question.questionNumber}
+                  value={question.options[1].isCorrect}
+                ></input>
+                {question.options[1].name}
+              </label>
             </div>
-            <div className="testAnswerContainer">
-              <input
-                type="radio"
-                className="testRadio"
-                disabled={props.testFinished ? true : false}
-                name={question.questionNumber}
-                value={question.options[2].isCorrect}
-              ></input>
-              <label className="testAnswerText">redistribution of income</label>
-            </div>
-            <div className="testAnswerContainer">
-              <input
-                type="radio"
-                className="testRadio"
-                disabled={props.testFinished ? true : false}
-                name={question.questionNumber}
-                value={question.options[3].isCorrect}
-              ></input>
-              <label className="testAnswerText">property rights</label>
-            </div>
+            {question.options[2] ? (
+              <div className="testAnswerContainer">
+                <label className="testAnswerText">
+                  <input
+                    type="radio"
+                    className="testRadio"
+                    disabled={props.testFinished ? true : false}
+                    name={question.questionNumber}
+                    value={question.options[2].isCorrect}
+                  ></input>
+                  {question.options[2].name}
+                </label>
+              </div>
+            ) : null}
+            {question.options[3] ? (
+              <div className="testAnswerContainer">
+                <label className="testAnswerText">
+                  <input
+                    type="radio"
+                    className="testRadio"
+                    disabled={props.testFinished ? true : false}
+                    name={question.questionNumber}
+                    value={question.options[3].isCorrect}
+                  ></input>
+                  {question.options[3].name}
+                </label>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

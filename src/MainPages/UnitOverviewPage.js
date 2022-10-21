@@ -40,7 +40,14 @@ const UnitOverviewPage = (props) => {
         ></ExtraResources>
       )}
       <Spacer></Spacer>
-      <Link to="/UnitPracticeTest">
+      <Link
+        to="/UnitPracticeTest"
+        className={
+          props.courseInfo[props.selectedUnit].unitTestUnlocked
+            ? "enabled-link"
+            : "disabled-link"
+        }
+      >
         <Button
           selectedUnit={props.selectedUnit}
           courseInfo={props.courseInfo}

@@ -17,6 +17,6 @@ export const StyledButton = styled.button.attrs((props) => ({
   transition: all 0.3s;
 
   &:hover {
-    cursor: not-allowed;
+    cursor: {props.cursor ? not-allowed : null};
   }
 `;

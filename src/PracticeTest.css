@@ -24,6 +24,10 @@
   line-height: 170%;
 }
 
+.testQuestionImage {
+  margin: 2.5rem 0rem;
+}
+
 .cardTestRowTwo {
   background-color: rgba(245, 245, 245, 0.416);
   padding: 30px 30px 30px 30px;
@@ -57,4 +61,10 @@
 
 .testAnswerText:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .testQuestionImage {
+    max-width: 90%;
+  }
 }
