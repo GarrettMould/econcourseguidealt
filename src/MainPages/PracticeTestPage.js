@@ -5,17 +5,12 @@ import PracticeTest from "../PracticeTest";
 import { Link } from "react-router-dom";
 import TestScore from "../TestScore";
 import ButtonResetTest from "../ButtonResetTest";
+import PopUpScore from "../PopUpScore";
 
 const PracticeTestPage = (props) => {
   return (
     <>
       <Heading text={`Unit ${props.unit} - Practice Test`}></Heading>
-      {props.testFinished ? (
-        <TestScore
-          unitTestLength={props.unitTestLength}
-          unitTestScore={props.unitTestScore}
-        ></TestScore>
-      ) : null}
       <PracticeTest
         forwardedRef={props.forwardedRef}
         courseInfo={props.courseInfo}

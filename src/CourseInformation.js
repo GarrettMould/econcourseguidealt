@@ -568,7 +568,7 @@ export var courseInformation = [
     id: 12,
     unitNumber: 2,
     unitUnlocked: true,
-    unitTestUnlocked: false,
+    unitTestUnlocked: true,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
     unitSolidColor: "#f9d8cd",
@@ -711,7 +711,7 @@ export var courseInformation = [
       {
         name: "U2-L8: Economic Growth and Capital",
         subtopic: 4,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1MRnJ0NMbPrSrtBmYXzgu9QxIdB17isJ4ULx1qabmIAQ/edit?usp=sharing"
       },
@@ -937,32 +937,32 @@ export var courseInformation = [
         subtopic: 2,
         image: question_6,
         questionText:
-          "What is the opportunity cost of moving from point D to point J? ",
+          "What is the opportunity cost of moving from point C to point D? ",
         options: [
           {
-            name: "6 storage sheds",
+            name: "25 units of clothes",
             id: 1,
             isCorrect: false
           },
-          { name: "9 storage sheds", id: 2, isCorrect: false },
-          { name: "225 crab puffs", id: 3, isCorrect: true },
-          { name: "425 crab puffs", id: 4, isCorrect: false }
+          { name: "50 units of clothes", id: 2, isCorrect: false },
+          { name: "25 units of food", id: 3, isCorrect: true },
+          { name: "50 units of food", id: 4, isCorrect: false }
         ]
       },
       {
         questionNumber: 7,
         subtopic: 3,
         questionText:
-          "What is the opportunity cost of moving from point J to point D? ",
+          "What is the opportunity cost of moving from point D to point C? ",
         options: [
           {
-            name: "225 crab puffs",
+            name: "50 units of clothes",
             id: 1,
-            isCorrect: false
+            isCorrect: true
           },
-          { name: "6 storage sheds", id: 2, isCorrect: true },
-          { name: "9 storage sheds", id: 3, isCorrect: false },
-          { name: "425 crab puffs", id: 4, isCorrect: false }
+          { name: "75 units of clothes", id: 2, isCorrect: false },
+          { name: "50 units of food", id: 3, isCorrect: false },
+          { name: "75 units of food", id: 4, isCorrect: false }
         ]
       },
       {

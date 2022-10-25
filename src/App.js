@@ -15,6 +15,7 @@ import UnitOverviewPage from "./MainPages/UnitOverviewPage";
 import PracticeTestPage from "./MainPages/PracticeTestPage";
 
 import { courseInformation } from "./CourseInformation";
+import PopUpScore from "./PopUpScore";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
@@ -29,6 +30,7 @@ const App = (props) => {
   const [testFinished, setTestFinished] = useState(false);
   const [incorrectQuestionsList, setIncorrectQuestionsList] = useState([]);
   const [unansweredQuestions, setUnansweredQuestions] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const forwardedRef = useRef();
 
@@ -93,6 +95,10 @@ const App = (props) => {
         blah.classList.remove("redBorder");
       }
     });
+
+    let unansweredQs = document.getElementsByClassName("redBorder");
+    let firstUnansweredQ = unansweredQs[0];
+    firstUnansweredQ.scrollIntoView({ behavior: "smooth" });
   };
 
   // Run when test is submitted (check if all questions have been answered)
@@ -135,20 +141,25 @@ const App = (props) => {
       });
       forwardedRef.current.scrollIntoView({ behavior: "smooth" });
       setIncorrectQuestionsList(incorrectQuestions);
+      setModalOpen(true);
 
       // Run this if there are unanswered questions
     } else {
       setUnansweredQuestions(true);
       highlightUnanswered();
       console.log(unitTestLength - question.length);
-      forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  // Close the pop up test score box
+
+  const closeModal = () => {
+    setModalOpen(false);
   };
 
   // Reset the test
 
   const resetTest = () => {
-    forwardedRef.current.scrollIntoView({ behavior: "smooth" });
     setUnansweredQuestions(false);
     setIncorrectQuestionsList([]);
     setTestFinished(false);
@@ -169,53 +180,72 @@ const App = (props) => {
     questions.forEach((elem) => {
       elem.classList.remove("red");
     });
+
+    {
+      forwardedRef.current
+        ? forwardedRef.current.scrollIntoView({ behavior: "smooth" })
+        : null;
+    }
   };
 
   return (
     <>
+      {modalOpen ? (
+        <PopUpScore
+          modalOpen={modalOpen}
+          closeModal={closeModal}
+          unitTestScore={unitTestScore}
+          unitTestLength={unitTestLength}
+        ></PopUpScore>
+      ) : null}
       <div className="containerApp">
-        <WebsiteTitle></WebsiteTitle>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <CourseHomePage
-                isMobile={isMobile}
-                courseInfo={courseInfo}
-                selectedUnit={selectedUnit}
-                updateSelectedUnit={updateSelectedUnit}
-              ></CourseHomePage>
-            }
-          />
-          <Route
-            path="/UnitOverviewPage"
-            element={
-              <UnitOverviewPage
-                unit={unit}
-                isMobile={isMobile}
-                courseInfo={courseInfo}
-                selectedUnit={selectedUnit}
-                updateSelectedUnit={updateSelectedUnit}
-              ></UnitOverviewPage>
-            }
-          />
-          <Route
-            path="/UnitPracticeTest"
-            element={
-              <PracticeTestPage
-                unit={unit}
-                courseInfo={courseInfo}
-                selectedUnit={selectedUnit}
-                tallyScore={tallyScore}
-                resetTest={resetTest}
-                forwardedRef={forwardedRef}
-                testFinished={testFinished}
-                unitTestLength={unitTestLength}
-                unitTestScore={unitTestScore}
-              ></PracticeTestPage>
-            }
-          />
-        </Routes>
+        <div className={modalOpen ? "opacity" : null}>
+          <WebsiteTitle resetTest={resetTest}></WebsiteTitle>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <CourseHomePage
+                  isMobile={isMobile}
+                  courseInfo={courseInfo}
+                  selectedUnit={selectedUnit}
+                  updateSelectedUnit={updateSelectedUnit}
+                ></CourseHomePage>
+              }
+            />
+            <Route
+              path="/UnitOverviewPage"
+              element={
+                <UnitOverviewPage
+                  unit={unit}
+                  isMobile={isMobile}
+                  courseInfo={courseInfo}
+                  selectedUnit={selectedUnit}
+                  updateSelectedUnit={updateSelectedUnit}
+                  resetTest={props.resetTest}
+                ></UnitOverviewPage>
+              }
+            />
+            <Route
+              path="/UnitPracticeTest"
+              element={
+                <PracticeTestPage
+                  unit={unit}
+                  courseInfo={courseInfo}
+                  selectedUnit={selectedUnit}
+                  closeModal={closeModal}
+                  modalOpen={modalOpen}
+                  tallyScore={tallyScore}
+                  resetTest={resetTest}
+                  forwardedRef={forwardedRef}
+                  testFinished={testFinished}
+                  unitTestLength={unitTestLength}
+                  unitTestScore={unitTestScore}
+                ></PracticeTestPage>
+              }
+            />
+          </Routes>
+        </div>
       </div>
     </>
   );

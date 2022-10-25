@@ -5,7 +5,7 @@ const Heading = (props) => {
     font-size: 175%;
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    padding: 40px 0px;
+    padding: 30px 0px;
 
     @media (max-width: 768px) {
       font-size: 150%;

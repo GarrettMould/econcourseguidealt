@@ -5,7 +5,7 @@ const ButtonResetTest = (props) => {
     <StyledButton
       onClick={props.testFinished ? props.resetTest : props.tallyScore}
     >
-      {props.testFinished ? "Reset Test" : "Submit"}
+      {props.testFinished ? "Retake Test" : "Submit"}
     </StyledButton>
   );
 };

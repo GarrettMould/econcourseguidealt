@@ -15,8 +15,17 @@ export const StyledButton = styled.button.attrs((props) => ({
   border: 1px solid rgb(230, 230, 230);
   border-radius: 2px;
   transition: all 0.3s;
+`;
 
-  &:hover {
-    cursor: {props.cursor ? not-allowed : null};
-  }
+export const StyledButtonClosePopUp = styled.button`
+  width: 50%;
+  height: 40px;
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 2px;
+  transition: all 0.3s;
 `;

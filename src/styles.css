@@ -1,8 +1,11 @@
 .containerApp {
   width: 100%;
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
 }
 
+.opacity {
+  opacity: 60%;
+}
 .disabled-link {
   pointer-events: none;
   opacity: 0.45;

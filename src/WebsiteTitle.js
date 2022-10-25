@@ -23,7 +23,11 @@ const WebsiteTitle = (props) => {
 
   return (
     <StyledTitle>
-      <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+      <Link
+        to="/"
+        style={{ textDecoration: "none", color: "black" }}
+        onClick={props.resetTest}
+      >
         <span>Econ</span> Course Guide
       </Link>
     </StyledTitle>
