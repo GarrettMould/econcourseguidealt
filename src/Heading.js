@@ -4,7 +4,7 @@ const Heading = (props) => {
   const StyledHeading = styled.div`
     font-size: 175%;
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     padding: 30px 0px;
 
     @media (max-width: 768px) {

@@ -18,6 +18,11 @@ const PopUpScore = (props) => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+      width: 75%;
+      height: 300px;
+    }
   `;
 
   const FinalScoreTitle = styled.div`

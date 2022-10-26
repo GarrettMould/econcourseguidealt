@@ -568,7 +568,7 @@ export var courseInformation = [
     id: 12,
     unitNumber: 2,
     unitUnlocked: true,
-    unitTestUnlocked: true,
+    unitTestUnlocked: false,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
     unitSolidColor: "#f9d8cd",
@@ -718,7 +718,7 @@ export var courseInformation = [
       {
         name: "U2-L9: International Trade and Economic Growth",
         subtopic: 4,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1zuvT-u6arHPYOzOkRuvim7NPKeTAvh-VliD-RsxgvXc/edit?usp=sharing"
       },
