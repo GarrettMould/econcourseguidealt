@@ -568,7 +568,7 @@ export var courseInformation = [
     id: 12,
     unitNumber: 2,
     unitUnlocked: true,
-    unitTestUnlocked: false,
+    unitTestUnlocked: true,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
     unitSolidColor: "#f9d8cd",
@@ -725,7 +725,7 @@ export var courseInformation = [
       {
         name: "Unit 2 Review Lesson",
         subtopic: 0,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1VFmqyCd3n3i21fh_f4K0_zWtv_1QPuKDaKOBn9Ui66w/edit?usp=sharing"
       }

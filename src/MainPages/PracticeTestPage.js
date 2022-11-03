@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 import TestScore from "../TestScore";
 import ButtonResetTest from "../ButtonResetTest";
 import PopUpScore from "../PopUpScore";
+import InstuctionsBox from "../InstructionsBox";
 
 const PracticeTestPage = (props) => {
   return (
     <>
       <Heading text={`Unit ${props.unit} - Practice Test`}></Heading>
+      <InstuctionsBox></InstuctionsBox>
       <PracticeTest
         forwardedRef={props.forwardedRef}
         courseInfo={props.courseInfo}

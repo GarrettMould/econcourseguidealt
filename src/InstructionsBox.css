@@ -1,0 +1,31 @@
+.instructionsBox {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: rgba(245, 245, 245, 0.416);
+  border: 1px solid rgb(230, 230, 230);
+  margin: 10px 0px 25px 0px;
+}
+
+.instructionsRowOne {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 20px 20px 20px 20px;
+}
+
+.instructionsRowTwo {
+  padding: 20px 20px 10px 20px;
+}
+
+.instructionsText {
+  width: 95%;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+.instructionsTitle {
+  font-size: 100%;
+  font-weight: 600;
+  padding-left: 20px;
+}
