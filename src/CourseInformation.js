@@ -568,7 +568,7 @@ export var courseInformation = [
     id: 12,
     unitNumber: 2,
     unitUnlocked: true,
-    unitTestUnlocked: true,
+    unitTestUnlocked: false,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
     unitSolidColor: "#f9d8cd",
@@ -728,6 +728,13 @@ export var courseInformation = [
         completed: true,
         link:
           "https://docs.google.com/presentation/d/1VFmqyCd3n3i21fh_f4K0_zWtv_1QPuKDaKOBn9Ui66w/edit?usp=sharing"
+      },
+      {
+        name: "Game Theory - Games and Dominant Strategies",
+        subtopic: 0,
+        completed: true,
+        link:
+          "https://docs.google.com/presentation/d/1S3_CtQ0JWNLt-zLoM2UcHDHdY0Vxb7Kdmz4KFglUhvA/edit?usp=sharing"
       }
     ],
     additionalResources: [
@@ -1162,231 +1169,277 @@ export var courseInformation = [
     id: 2,
     unitNumber: 3,
     unitName: "Government",
-    unitUnlocked: false,
+    unitUnlocked: true,
     unitTestUnlocked: false,
     unitBackgroundColor: "#ebf7f8",
     unitSolidColor: "#AEDDE0",
     unitConcepts: [
       {
-        name: "Scarcity",
+        name: "Monopoly",
         subtopic: 1
       },
       {
-        name: "Opportunity Costs",
+        name: "Antitrust Laws",
         subtopic: 1
       },
       {
-        name: "Marginal Benefits",
+        name: "Non-Exludable Goods",
         subtopic: 1
       },
       {
-        name: "Marginal Costs",
+        name: "Non-Rivalrous Goods",
         subtopic: 1
       },
       {
-        name: "Monetary Incentives",
+        name: "Progressive Tax System",
         subtopic: 1
       },
       {
-        name: "Non-Monetary Incentives",
+        name: "Externalities",
         subtopic: 1
       },
       {
-        name: "Price Rationing",
+        name: "Monetary Policy",
+        subtopic: 1
+      },
+      {
+        name: "Fiscal Policy",
+        subtopic: 1
+      },
+      {
+        name: "Economic Growth",
         subtopic: 2
       },
       {
-        name: "Non-Price Rationing",
+        name: "Full Employment",
         subtopic: 2
       },
       {
-        name: "Allocation of Resources",
+        name: "Price Stability",
         subtopic: 2
       },
       {
-        name: "Invisible Hand",
+        name: "Cyclical Unemployment",
+        subtopic: 2
+      },
+      {
+        name: "Frictional Unemployment",
+        subtopic: 2
+      },
+      {
+        name: "Structural Unemployment",
+        subtopic: 2
+      },
+      {
+        name: "Contractionary Policy",
+        subtopic: 2
+      },
+      {
+        name: "Expansionary Policy",
+        subtopic: 2
+      },
+      {
+        name: "Rent Control",
+        subtopic: 2
+      },
+      {
+        name: "Direct Taxes",
         subtopic: 3
       },
       {
-        name: "Self-Interest",
+        name: "Indirect Taxes",
         subtopic: 3
       },
       {
-        name: "Property Rights",
+        name: "Property Taxes",
         subtopic: 3
       },
       {
-        name: "Determinants of Supply",
+        name: "Income Taxes",
+        subtopic: 3
+      },
+      {
+        name: "Progressive Tax System",
+        subtopic: 3
+      },
+      {
+        name: "Proportional Tax System",
+        subtopic: 3
+      },
+      {
+        name: "Federal Budget",
+        subtopic: 3
+      },
+      {
+        name: "Mandatory Spending",
+        subtopic: 3
+      },
+      {
+        name: "Disrectionary Spending",
+        subtopic: 3
+      },
+      {
+        name: "Net Interest",
+        subtopic: 3
+      },
+      {
+        name: "Store of Value",
         subtopic: 4
       },
       {
-        name: "Determinants of Demand",
+        name: "Medium of Exchange ",
         subtopic: 4
       },
       {
-        name: "Demand Schedules",
+        name: "Six Characteristics of Money",
         subtopic: 4
       },
       {
-        name: "Supply Schedules",
+        name: "Money Supply",
         subtopic: 4
       },
       {
-        name: "Equilibrium",
+        name: "M1 and M2",
+        subtopic: 4
+      },
+      {
+        name: "Commodity Money",
+        subtopic: 4
+      },
+      {
+        name: "Representative Money",
+        subtopic: 4
+      },
+      {
+        name: "Fiat Money",
+        subtopic: 4
+      },
+      {
+        name: "Federal Reserve Structure",
+        subtopic: 4
+      },
+      {
+        name: "Three Goals of Monetary Policy",
+        subtopic: 4
+      },
+      {
+        name: "Cash Reserve Ratio",
+        subtopic: 4
+      },
+      {
+        name: "Federal Funds Rate",
+        subtopic: 4
+      },
+      {
+        name: "Government Securities",
         subtopic: 4
       }
     ],
     unitLessons: [
       {
-        name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
+        name: "U3: L1: The Role of Governments - Part One",
         subtopic: 1,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1HHRcRLR0m6EjTXXl2uKpUwzaOAHdOfVPAXtyXzCG2Ic/edit?usp=sharing"
       },
       {
-        name: "U1-L2: Trade-Offs and Opportunity Costs",
+        name: "U3: L2: The Role of Governments - Part Two",
         subtopic: 1,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1zmtryyutT0XjxfWiJwTMhl6sK38YcplnqaHVyR1fcAc/edit?usp=sharing"
       },
       {
-        name: "U1-L3: Incentives (Monetary and Non-Monetary)",
-        subtopic: 1,
-        completed: false,
-        link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
-      },
-      {
-        name: "U1-L4: Three Fundamental Macroeconomic Questions",
+        name: "U3: L3: The Costs and Benefits of Government",
         subtopic: 2,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/11poBx91c8awB5JHn7m1UpdwhZysczpgt2EAkdwroDgs/edit?usp=sharing"
       },
       {
-        name: "U1-L5: Basic Economic Systems",
+        name: "U3-L4: Government Price Controls",
         subtopic: 2,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1bBWqKgbeihV8I9s2fo_iy4C4HQp6qTFywqMx-STF18k/edit?usp=sharing"
       },
       {
-        name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
-        subtopic: 2,
-        completed: false,
-        link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
-      },
-      {
-        name: "U1-L7: The Benefits and Key Features of Market Economies",
+        name: "U3-L5: Taxation",
         subtopic: 3,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1ksUIWqoa2g7eBjVxmL2b_5QW_J-lYT6MYndLoB63b5Y/edit?usp=sharing"
       },
       {
-        name: "U1-L8: Adam Smith and The Wealth of Nations",
+        name: "U3-L6: Taxation - Part 2",
         subtopic: 3,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1aRzC-k4bRSNugFrDOdKoC9F8mNaDxIA0CeHz-cbOQNE/edit?usp=sharing"
       },
       {
-        name: "U1-L9: An Introduction to Supply and Demand",
+        name: "U3-L7: The Functions of Money",
         subtopic: 4,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1JBon-r4955X0qy2vQJsx_0ZL_iwpX6dELSVXmtCoWMY/edit?usp=sharing"
       },
       {
-        name: "U1-L10: The Laws of Supply and Demand",
+        name: "U3-L8: The Federal Reserve",
         subtopic: 4,
         completed: false,
         link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
-      },
-      {
-        name: "U1-L11: Non-Price Determinants of Supply and Demand",
-        subtopic: 4,
-        completed: false,
-        link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
-      },
-      {
-        name: "U1-L12: Unit 1 Review",
-        subtopic: 0,
-        completed: false,
-        link:
-          "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
+          "https://docs.google.com/presentation/d/1xd9i51D8a4HUWOgZcqhLVR8Id0mxs_E3nmr8VpSz1As/edit?usp=sharing"
       }
     ],
     additionalResources: [
       {
-        name: "Command and Market Systems (Khan Academy)",
+        name: "The Free Rider Problem Explained",
         type: "YouTube Video",
         summary:
-          "A thorough explanation of the main differences between command systems and market systems.",
-        link: "https://www.youtube.com/watch?v=Ve6K10-Yx_M",
-        subtopic: 3,
-        concepts: [
-          { name: "3 Basic Questions", subtopic: 2 },
-          { name: "Economic Systems", subtopic: 2 }
-        ]
-      },
-      {
-        name: "Real Life Examples of Scarcity",
-        type: "Web Article",
-        summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link:
-          "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
+          "A video that explains the free rider problem and the non-rivalrous and non-excludable characteristics of public goods.",
+        link: "https://www.youtube.com/watch?v=R8VBRCs2jTU",
         subtopic: 1,
         concepts: [
-          { name: "Scarcity", subtopic: 1 },
-          { name: "Opportunity Costs", subtopic: 1 }
+          { name: "Non-Excludable Goods", subtopic: 1 },
+          { name: "Non-Rivalrous Goods", subtopic: 1 }
         ]
       },
       {
-        name: "How Countries Across the World Rationed Vaccines",
-        type: "Podcast",
-        summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link:
-          "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
-        subtopic: 2,
-        concepts: [
-          { name: "Scarcity", subtopic: 1 },
-          { name: "Non-Price Rationing", subtopic: 2 }
-        ]
-      },
-      {
-        name: "The Freest Economies in the World",
+        name: "How Does Raising Interest Rates Control Inflation?",
         type: "YouTube Video",
         summary:
-          "A solid introduction into opportunity costs, the role they play in our everyday lives, and how they apply to personal financial decisions.",
-        link:
-          "https://www.stlouisfed.org/open-vault/2020/january/real-life-examples-opportunity-cost#:~:text=How%20is%20opportunity%20cost%20defined,Economics%3A%20Money%20and%20Missed%20Opportunities.",
-        subtopic: 3,
-        concepts: [
-          { name: "Scarcity", subtopic: 1 },
-          { name: "3 Basic Questions", subtopic: 3 },
-          { name: "Economic Systems", subtopic: 3 }
-        ]
-      },
-      {
-        name: "Supply and Demand in 8 Minutes",
-        type: "YouTube Video",
-        summary:
-          "Economics professor Jacob Clifford provides a short and easy to understand overview of the concepts of supply and demand.",
-        link:
-          "https://www.youtube.com/watch?v=kIFBaaPJUO0&t=1s&ab_channel=JacobClifford",
+          "A great video that explains how raising interest rates helps control inflation.",
+        link: "https://www.youtube.com/watch?v=R8VBRCs2jTU",
         subtopic: 4,
         concepts: [
-          { name: "Equilibrium", subtopic: 4 },
-          { name: "Determinants of Supply", subtopic: 4 },
-          { name: "Determinants of Demand", subtopic: 4 }
+          { name: "Three Goals of Monetary Policy", subtopic: 4 },
+          { name: "Federal Funds Rate", subtopic: 4 }
+        ]
+      },
+      {
+        name: "Commodity Money vs. Fiat Money - Khan Academy",
+        type: "YouTube Video",
+        summary:
+          "A Khan Academy explanation of the differences between commodity money and fiat money. ",
+        link: "https://www.youtube.com/watch?v=fs12fX407GU",
+        subtopic: 4,
+        concepts: [
+          { name: "Commodity Money", subtopic: 4 },
+          { name: "Fiat Money", subtopic: 4 }
+        ]
+      },
+      {
+        name: "What Gives a Dollar It's Value? - TedEd",
+        type: "YouTube Video",
+        summary:
+          "A TedEd video that explores how a currency becomes trusted by large groups of people and what influences the value of that currency.",
+        link: "https://www.youtube.com/watch?v=XNu5ppFZbHo&t=159s",
+        subtopic: 4,
+        concepts: [
+          { name: "Fiat Money", subtopic: 4 },
+          { name: "Money Supply", subtopic: 4 }
         ]
       }
     ],

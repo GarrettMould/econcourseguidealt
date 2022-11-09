@@ -29,3 +29,16 @@ export const StyledButtonClosePopUp = styled.button`
   border-radius: 2px;
   transition: all 0.3s;
 `;
+
+export const StyledButtonPracticeTest = styled.button`
+  width: 70%;
+  height: 60px;
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 2px;
+  transition: all 0.3s;
+`;

@@ -1,12 +1,12 @@
-import { StyledButton } from "./Buttons.styled.js";
+import { StyledButton, StyledButtonPracticeTest } from "./Buttons.styled.js";
 
 const ButtonResetTest = (props) => {
   return (
-    <StyledButton
+    <StyledButtonPracticeTest
       onClick={props.testFinished ? props.resetTest : props.tallyScore}
     >
       {props.testFinished ? "Retake Test" : "Submit"}
-    </StyledButton>
+    </StyledButtonPracticeTest>
   );
 };
 
