@@ -1339,7 +1339,7 @@ export var courseInformation = [
       {
         name: "U3: L1: The Role of Governments - Part One",
         subtopic: 1,
-        completed: false,
+        completed: true,
         link:
           "https://docs.google.com/presentation/d/1HHRcRLR0m6EjTXXl2uKpUwzaOAHdOfVPAXtyXzCG2Ic/edit?usp=sharing"
       },
@@ -1394,6 +1394,32 @@ export var courseInformation = [
       }
     ],
     additionalResources: [
+      {
+        name: "The Role of Government - Mastery Test",
+        type: "Google Form",
+        summary:
+          "This Google Form activity takes the place of the Unit 3 - Subtopic 1 Mastery Test. You will receive a grade for this activity.",
+        link: "https://forms.gle/vsFgUXsi6yPWQHnWA",
+        subtopic: 1,
+        concepts: [
+          { name: "Non-Excludable Goods", subtopic: 1 },
+          { name: "Non-Rivalrous Goods", subtopic: 1 },
+          {
+            name: "Externalities",
+            subtopic: 1
+          }
+        ]
+      },
+      {
+        name: "Thinking in Systems - Success to the Successful",
+        type: "Book Excerpt",
+        summary:
+          "A short excerpt from Donella Meadows' book 'Thinking in Systems'. This section of book discusses a problem that systems, including economic systems, often encounter. ",
+        link:
+          "https://drive.google.com/file/d/1ntzC5cW9HmlXaLTONI90DCwAVC9PJ_X3/view?usp=sharing",
+        subtopic: 1,
+        concepts: [{ name: "Progressive Tax System", subtopic: 1 }]
+      },
       {
         name: "The Free Rider Problem Explained",
         type: "YouTube Video",
