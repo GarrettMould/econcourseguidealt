@@ -15,7 +15,6 @@ a:hover {
   padding: 0px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(240, 240, 240);
   border-radius: 2px;
   list-style: none;
 }
@@ -42,7 +41,7 @@ a:hover {
 
 .heading {
   font-family: "Roboto", sans-serif;
-  font-size: 130%;
+  font-size: 110%;
   font-weight: 700;
 }
 
@@ -50,7 +49,7 @@ a:hover {
   width: 90%;
   overflow-x: hidden;
   white-space: nowrap;
-  font-size: 110%;
+  font-size: 100%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -86,6 +85,13 @@ a:hover {
 .tokenTextLL {
   font-family: "Roboto", sans-serif;
   font-size: 75%;
+}
+
+#classSelect {
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 90%;
+  font-weight: 700;
 }
 
 /* Media Queries */

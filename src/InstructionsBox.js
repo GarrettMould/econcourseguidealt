@@ -28,8 +28,8 @@ const InstructionsBox = (props) => {
       <div className="instructionsRowTwo">
         <p className="instructionsText">
           Complete the test by choosing the correct answer for each question.
-          Use the sidebar to access the relevant lesson slides for each
-          question.
+          Use your notes or the lesson Powerpoints to find the relevant
+          information.
         </p>
       </div>
     </div>

@@ -98,21 +98,29 @@ export var courseInformation = [
       {
         name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
       {
         name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
-        completed: true,
+
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1vuq_VPdpo7-CEYKQ-hiUsNFfcilvFTwzyYuds_f1z5s/edit?usp=sharing"
       },
       {
         name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
-        completed: true,
+
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1dXVmyPT2K0C4TDk1adt6heeoFpZKKwpY48N6jkb63gc/edit?usp=sharing"
       },
@@ -120,56 +128,72 @@ export var courseInformation = [
         name:
           "U1-L4: Three Fundamental Macroeconomic Questions / Economic Systems",
         subtopic: 2,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1WmDh9FSfc0xgzfm7jXWrPOZyHJPZSGnoaJ2RA7PEgr4/edit?usp=sharing"
       },
       {
         name: "U1-L5: The Key Differences Between Economic Systems",
         subtopic: 2,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1o_9W_QbyXd3iMl316LCqPp1jv_dLPuZAFP-wTpbV1IM/edit?usp=sharing"
       },
       {
         name: "U1-L6: The Circular Flow of Income",
         subtopic: 2,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1ZupCUzTva1bC-eEgfUZnscNUkP0uEl0japIrGktbVew/edit?usp=sharing"
       },
       {
         name: "U1-L7: Market Economies",
         subtopic: 3,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1RCfmPytSvSCY9tW2e1JEMv0ZjM9zDCeL6biVdkVWL7I/edit?usp=sharing"
       },
       {
         name: "U1-L8: The Benefits of Market Economies",
         subtopic: 3,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/13pfMbCKgeSQqHHYjZmB7nMX_38Wh4kteIIdPbPisx0c/edit?usp=sharing"
       },
       {
         name: "U1-L9: Free Enterprise",
         subtopic: 3,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1AtU0VCL3lXgSUvToMxtoVZMZRk96tmekjkrbCLZEEZs/edit?usp=sharing"
       },
       {
         name: "U1-L10: The Law of Demand",
         subtopic: 4,
-        completed: true,
+        completed9AI: true,
+        completed11ADN1: false,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1XDwf1OhOgJDjZ-CQ-Cptlxqf4T9uCsmlFonEQMpJ5QM/edit?usp=sharing"
       },
       {
         name: "U1-L11: The Law of Supply",
         subtopic: 4,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/14Qw7DHq2GRERipCqEeDb4wJyZInAHMs1tkQr-uEuc_M/edit?usp=sharing"
       },
@@ -177,19 +201,32 @@ export var courseInformation = [
         name:
           "U1-L12: Equilibrium / Shifts in Supply and Demand / Externalities",
         subtopic: 4,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1xbLpArB4j_-Wufx0dYj9czY73-Exk2m9V9pVn0XTWYM/edit?usp=sharing"
       },
       {
         name: "U1 Review",
         subtopic: 0,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1Rsr1lNZ5SX_BB_iy93D8GC7raT5md1GHDOcEWSjwk2Y/edit?usp=sharing"
       }
     ],
     additionalResources: [
+      {
+        name: "CIA World Factbook",
+        type: "Website",
+        summary:
+          "A website that provides detailed information about the economic systems of different countries.",
+        link: "https://www.cia.gov/the-world-factbook/",
+        subtopic: 2,
+        concepts: [{ name: "Economic Systems", subtopic: 2 }]
+      },
       {
         name: "Real Life Examples of Opportunity Cost",
         type: "Article",
@@ -567,7 +604,7 @@ export var courseInformation = [
   {
     id: 12,
     unitNumber: 2,
-    unitUnlocked: true,
+    unitUnlocked: false,
     unitTestUnlocked: false,
     unitName: "Free Market and Business",
     unitBackgroundColor: "#fdf0eb",
@@ -662,77 +699,99 @@ export var courseInformation = [
       {
         name: "U2-L1: Factors of Production",
         subtopic: 1,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1uIdQMoCf8lv0gg5qhOq0MjcVqx22kn90ErRb1nlDE3k/edit?usp=sharing"
       },
       {
         name: "U2-L2: Production Possibilities Curves",
         subtopic: 1,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1XvQoX09qWH5uL1ZTfeQDwfUTvle83DhrEP8ckgRQqqY/edit?usp=sharing"
       },
       {
         name: "U2-L3: Forming a Business",
         subtopic: 2,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1WdZI7gANtLxtHXyjSGlrAJPKkeaW4vFgcvgIAuJTkQs/edit?usp=sharing"
       },
       {
         name: "U2-L4: Types of Businesses",
         subtopic: 2,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1AotFtQYXz3ovcYRJP0a_o_JfQkdEu2DmY_1QUMfkGIU/edit?usp=sharing"
       },
       {
         name: "U2-L5: Labor and Labor Unions",
         subtopic: 3,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1ZOpgAsknvDWSLh45wxX4gC7R1ALBLbOGmfnw2GCgFl8/edit?usp=sharing"
       },
       {
         name: "U2-L6: The Supply and Demand of Labor",
         subtopic: 3,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/18ltn8ScU4pAYyQTiCYAnh5pA6POYj1U8S2ggYB3ObWE/edit?usp=sharing"
       },
       {
         name: "U2-L7: Trade, Jobs, and Careers",
         subtopic: 3,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1GNHZS574FeQ_E-C-RRFZY4q4yftjNTCRVW73Lj6Q_-A/edit?usp=sharing"
       },
       {
         name: "U2-L8: Economic Growth and Capital",
         subtopic: 4,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1MRnJ0NMbPrSrtBmYXzgu9QxIdB17isJ4ULx1qabmIAQ/edit?usp=sharing"
       },
       {
         name: "U2-L9: International Trade and Economic Growth",
         subtopic: 4,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1zuvT-u6arHPYOzOkRuvim7NPKeTAvh-VliD-RsxgvXc/edit?usp=sharing"
       },
       {
         name: "Unit 2 Review Lesson",
         subtopic: 0,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1VFmqyCd3n3i21fh_f4K0_zWtv_1QPuKDaKOBn9Ui66w/edit?usp=sharing"
       },
       {
         name: "Game Theory - Games and Dominant Strategies",
         subtopic: 0,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1S3_CtQ0JWNLt-zLoM2UcHDHdY0Vxb7Kdmz4KFglUhvA/edit?usp=sharing"
       }
@@ -1169,7 +1228,7 @@ export var courseInformation = [
     id: 2,
     unitNumber: 3,
     unitName: "Government",
-    unitUnlocked: true,
+    unitUnlocked: false,
     unitTestUnlocked: false,
     unitBackgroundColor: "#ebf7f8",
     unitSolidColor: "#AEDDE0",
@@ -1339,56 +1398,72 @@ export var courseInformation = [
       {
         name: "U3: L1: The Role of Governments - Part One",
         subtopic: 1,
-        completed: true,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1HHRcRLR0m6EjTXXl2uKpUwzaOAHdOfVPAXtyXzCG2Ic/edit?usp=sharing"
       },
       {
         name: "U3: L2: The Role of Governments - Part Two",
         subtopic: 1,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1zmtryyutT0XjxfWiJwTMhl6sK38YcplnqaHVyR1fcAc/edit?usp=sharing"
       },
       {
         name: "U3: L3: The Costs and Benefits of Government",
         subtopic: 2,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/11poBx91c8awB5JHn7m1UpdwhZysczpgt2EAkdwroDgs/edit?usp=sharing"
       },
       {
         name: "U3-L4: Government Price Controls",
         subtopic: 2,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1bBWqKgbeihV8I9s2fo_iy4C4HQp6qTFywqMx-STF18k/edit?usp=sharing"
       },
       {
         name: "U3-L5: Taxation",
         subtopic: 3,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1ksUIWqoa2g7eBjVxmL2b_5QW_J-lYT6MYndLoB63b5Y/edit?usp=sharing"
       },
       {
         name: "U3-L6: Taxation - Part 2",
         subtopic: 3,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1aRzC-k4bRSNugFrDOdKoC9F8mNaDxIA0CeHz-cbOQNE/edit?usp=sharing"
       },
       {
         name: "U3-L7: The Functions of Money",
         subtopic: 4,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1JBon-r4955X0qy2vQJsx_0ZL_iwpX6dELSVXmtCoWMY/edit?usp=sharing"
       },
       {
         name: "U3-L8: The Federal Reserve",
         subtopic: 4,
-        completed: false,
+        completed9AI: false,
+        completed11ADN1: false,
+        completed12AB3: false,
         link:
           "https://docs.google.com/presentation/d/1xd9i51D8a4HUWOgZcqhLVR8Id0mxs_E3nmr8VpSz1As/edit?usp=sharing"
       }
@@ -1715,6 +1790,9 @@ export var courseInformation = [
         name: "U1-L1: Scarcity - The Fundamental Problem of Economics",
         subtopic: 1,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1722,6 +1800,9 @@ export var courseInformation = [
         name: "U1-L2: Trade-Offs and Opportunity Costs",
         subtopic: 1,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1729,6 +1810,9 @@ export var courseInformation = [
         name: "U1-L3: Incentives (Monetary and Non-Monetary)",
         subtopic: 1,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1736,6 +1820,9 @@ export var courseInformation = [
         name: "U1-L4: Three Fundamental Macroeconomic Questions",
         subtopic: 2,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1743,6 +1830,9 @@ export var courseInformation = [
         name: "U1-L5: Basic Economic Systems",
         subtopic: 2,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1750,6 +1840,9 @@ export var courseInformation = [
         name: "U1-L6: Market Economies, Command Economies, Mixed Economies",
         subtopic: 2,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1757,6 +1850,9 @@ export var courseInformation = [
         name: "U1-L7: The Benefits and Key Features of Market Economies",
         subtopic: 3,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1764,6 +1860,9 @@ export var courseInformation = [
         name: "U1-L8: Adam Smith and The Wealth of Nations",
         subtopic: 3,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1771,6 +1870,9 @@ export var courseInformation = [
         name: "U1-L9: An Introduction to Supply and Demand",
         subtopic: 4,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1778,6 +1880,9 @@ export var courseInformation = [
         name: "U1-L10: The Laws of Supply and Demand",
         subtopic: 4,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1785,6 +1890,9 @@ export var courseInformation = [
         name: "U1-L11: Non-Price Determinants of Supply and Demand",
         subtopic: 4,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       },
@@ -1792,6 +1900,9 @@ export var courseInformation = [
         name: "U1-L12: Unit 1 Review",
         subtopic: 0,
         completed: false,
+        completed9AI: true,
+        completed11ADN1: true,
+        completed12AB3: true,
         link:
           "https://docs.google.com/presentation/d/1kTjCjRYneH5L2FvrKr5que0jTtaI9dOddoeXLS1eBec/edit?usp=sharing"
       }

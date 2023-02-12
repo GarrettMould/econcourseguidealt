@@ -19,7 +19,7 @@ import PopUpScore from "./PopUpScore";
 
 const App = (props) => {
   const [courseInfo, setCourseInfo] = useState(courseInformation);
-  const [selectedUnit, setSelectedUnit] = useState(1);
+  const [selectedUnit, setSelectedUnit] = useState(0);
   const [selectedUnitDisplay, setSelectedUnitDisplay] = useState(
     selectedUnit + 1
   );
@@ -31,12 +31,17 @@ const App = (props) => {
   const [incorrectQuestionsList, setIncorrectQuestionsList] = useState([]);
   const [unansweredQuestions, setUnansweredQuestions] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [selectedClass, setSelectedClass] = useState("9AI");
 
   const forwardedRef = useRef();
 
   useEffect(() => {
     console.log(forwardedRef.current);
   });
+
+  useEffect(() => {
+    console.log(selectedClass);
+  }, [selectedClass]);
 
   // Reading device width and updating state on change
   useEffect(() => {
@@ -73,6 +78,18 @@ const App = (props) => {
       alert("Error");
     }
   };
+
+  const updateSelectedClass = () => {
+    var classID = document.getElementById("classSelect");
+    var classIDValue = classID.value;
+    setSelectedClass(classIDValue);
+  };
+
+  useEffect(() => {
+    console.log(selectedClass);
+  }, [selectedClass]);
+
+  console.log(selectedClass);
 
   var unit = courseInfo[selectedUnit].unitNumber;
 
@@ -217,6 +234,9 @@ const App = (props) => {
               path="/UnitOverviewPage"
               element={
                 <UnitOverviewPage
+                  selectedClass={selectedClass}
+                  setSelectedClass={setSelectedClass}
+                  updateSelectedClass={updateSelectedClass}
                   unit={unit}
                   isMobile={isMobile}
                   courseInfo={courseInfo}

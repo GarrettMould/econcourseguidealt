@@ -15,6 +15,8 @@ const UnitOverviewPage = (props) => {
         text={`Unit ${props.unit} - Lesson Materials`}
       ></Heading>
       <LessonList
+        selectedClass={props.selectedClass}
+        updateSelectedClass={props.updateSelectedClass}
         unit={props.unit}
         isMobile={props.isMobile}
         courseInfo={props.courseInfo}
